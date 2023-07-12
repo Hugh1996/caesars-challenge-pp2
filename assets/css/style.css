@@ -1,0 +1,22 @@
+/* Sets background image and font size to 10px */
+:root {
+    background: url(../images/centurion.jpg);
+    font-size: 62.5%;
+}
+
+/* Select Bodoni font and resets all margin and padding */
+* {
+    font-family: 'Libre Bodoni', sans-serif;
+    ;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-area {
+    width: 50%;
+    height: 70%;
+    background-color: red;
+    margin: 0 auto;
+    position: absolute;
+}
