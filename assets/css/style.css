@@ -17,15 +17,15 @@
 
 /* Styles quiz area */
 
-.container {
+.quiz-container {
     width: 40%;
-    height: 50%;
+    height: 60%;
     background-color: rgba(139, 9, 0, 0.904);
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 12% 0 0 10%;
+    margin: 10% 0 0 10%;
     border-radius: 5px;
 }
 
@@ -45,12 +45,14 @@
     border-radius: 5px;
     text-align: center;
     color: black;
-    width: 12rem;
-    background-color: rgba(128, 0, 117, 0.925);
+    width: 15rem;
+    height: 3rem;
+    background-color: darkmagenta;
 }
 
+.btn:active,
 .btn:hover {
-    cursor: pointer;
+    cursor: url(../images/sword.png), auto;
     transform: scale(1.1);
     border-radius: 5px;
 }
