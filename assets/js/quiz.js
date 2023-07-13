@@ -1,4 +1,7 @@
-function startQuiz() {
+
+const maxQuestions = 5;
+
+function startQuiz(questions) {
 
     let container = document.getElementById("container");
 
@@ -11,14 +14,17 @@ function startQuiz() {
     question.textContent = "This will be the first question";
     quizArea.appendChild(question);
 
+
     let options = ["1", "2", "3", "4"];
-    options.forEach(function (option) {
+    for (let option of options) {
         let answer = document.createElement("button");
         answer.className = "quiz-btn";
         answer.textContent = option;
         quizArea.appendChild(answer);
-    });
+
+    };
 
     container.appendChild(quizArea);
+
 }
 

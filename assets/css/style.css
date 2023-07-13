@@ -63,7 +63,7 @@ body {
     background-color: darkmagenta;
 }
 
-/* Quiz questions styling */
+/* Quiz styling */
 
 h2 {
     font-size: 2.5rem;
@@ -72,9 +72,9 @@ h2 {
 
 .quiz-btn {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     border: 1px solid black;
-    width: 20rem;
+    width: 40rem;
     margin-bottom: 1.5rem;
     padding: 0.5rem;
     font-size: 1.8rem;
