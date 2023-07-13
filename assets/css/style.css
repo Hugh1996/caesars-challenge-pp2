@@ -22,7 +22,7 @@ body {
     height: 100vh;
 }
 
-/* Styles quiz area */
+/* Styles container area */
 
 #container {
     width: 750px;
@@ -43,12 +43,7 @@ body {
 
 /* Button styling */
 
-#username {
-    margin-bottom: 1.5rem;
-    height: 25px;
-}
-
-.btn {
+.main-btn {
     text-decoration: none;
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -58,12 +53,38 @@ body {
     color: black;
     width: 15rem;
     height: 3rem;
-    background-color: darkmagenta;
 }
 
-.btn:active,
-.btn:hover {
+.main-btn:active,
+.main-btn:hover {
     cursor: url(../images/sword.png), auto;
     transform: scale(1.1);
     border-radius: 5px;
+    background-color: darkmagenta;
+}
+
+/* Quiz questions styling */
+
+h2 {
+    font-size: 2.5rem;
+    padding-bottom: 5rem;
+}
+
+.quiz-btn {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 20rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
+
+.quiz-btn:active,
+.quiz-btn:hover {
+    cursor: url(../images/sword.png), auto;
+    transform: scale(1.1);
+    border-radius: 5px;
+    background-color: darkmagenta;
 }
