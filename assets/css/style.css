@@ -15,30 +15,42 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 /* Styles quiz area */
 
-.quiz-container {
-    width: 40%;
-    height: 60%;
-    background-color: rgba(139, 9, 0, 0.904);
+#container {
+    width: 750px;
+    min-height: 500px;
+    background-color: rgba(130, 9, 0, 0.85);
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 10% 0 0 10%;
     border-radius: 5px;
 }
 
 .heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: black;
     margin: 6rem 0 6rem 0;
 }
 
 /* Button styling */
 
+#username {
+    margin-bottom: 1.5rem;
+    height: 25px;
+}
+
 .btn {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
     border: 1px solid black;
     border-radius: 5px;
