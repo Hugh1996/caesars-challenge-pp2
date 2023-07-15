@@ -1,7 +1,3 @@
-/* Tracks current question */
-
-let questionIndex = 0;
-
 /* List of questions */
 
 let questions = [
@@ -41,6 +37,10 @@ let questions = [
         answer: "Caligula"
     }
 ];
+
+/* Produces 5 random questions out of a total of 7 */
+
+let questionIndex = Math.floor(Math.random() * questions.length);
 
 /* Empties container div and populates quiz questions */
 
