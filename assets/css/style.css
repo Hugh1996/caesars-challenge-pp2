@@ -25,6 +25,7 @@ body {
 /* Styles container area */
 
 #container {
+    position: relative;
     width: 750px;
     min-height: 500px;
     background-color: rgba(130, 9, 0, 0.85);
@@ -95,4 +96,14 @@ h2 {
     transform: scale(1.1);
     border-radius: 5px;
     background-color: darkmagenta;
+}
+
+#num {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
 }

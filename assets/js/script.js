@@ -57,6 +57,13 @@ function startQuiz() {
     questionOption.textContent = questions[questionIndex].question;
     quizArea.appendChild(questionOption);
 
+    /* Creates paragraph to display question count */
+
+    let questionNumber = document.createElement("p");
+    questionNumber.id = "num";
+    questionNumber.textContent = (questionIndex + 1) + " / " + questions.length;
+    quizArea.appendChild(questionNumber);
+
     for (let option of questions[questionIndex].options) {
         let answer = document.createElement("button");
         answer.className = "quiz-btn";
