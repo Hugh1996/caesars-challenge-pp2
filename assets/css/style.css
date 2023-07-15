@@ -46,6 +46,7 @@ body {
 .main-btn {
     text-decoration: none;
     font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 1.5rem;
     border: 1px solid black;
     border-radius: 5px;
@@ -71,11 +72,10 @@ h2 {
 }
 
 .quiz-btn {
-    display: flex;
-    justify-content: center;
     border: 1px solid black;
-    width: 40rem;
-    margin-bottom: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 1rem;
     padding: 0.5rem;
     font-size: 1.8rem;
     border-radius: 5px;
