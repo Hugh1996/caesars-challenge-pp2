@@ -1,7 +1,7 @@
 /* Sets background image and font size to 10px */
 
 :root {
-    background: url(../images/centurion.jpg);
+    background: url(../images/centurion.jpg) no-repeat center center;
     font-size: 62.5%;
 }
 
@@ -66,16 +66,24 @@ body {
 
 /* Quiz styling */
 
+#quiz-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h2 {
     font-size: 2.5rem;
     padding-bottom: 5rem;
 }
 
 .quiz-btn {
+    display: block;
+    text-align: center;
     border: 1px solid black;
     font-weight: bold;
-    width: 100%;
-    margin-bottom: 1rem;
+    width: 50rem;
+    margin-bottom: 1.2rem;
     padding: 0.5rem;
     font-size: 1.8rem;
     border-radius: 5px;

@@ -37,7 +37,7 @@ let questions = [
     },
     {
         question: "Which Roman Emperor named his horse senator?",
-        options: ["Caligua", "Nero", "Caracalla", "Domitian"],
+        options: ["Caligula", "Nero", "Caracalla", "Domitian"],
         answer: "Caligula"
     }
 ];
