@@ -1,3 +1,5 @@
+
+
 /* List of questions */
 
 let questions = [
@@ -55,13 +57,23 @@ let questions = [
 
 ];
 
-/* Produces random questions */
+let questionIndex = 0;
 
-let questionIndex = Math.floor(Math.random() * questions.length);
+function shuffleArray(array) {
+    return array.sort(() => Math.random() - 0.5);
+}
 
 /* Empties container div and populates quiz questions */
 
 function startQuiz() {
+
+    /* Ensures a random question that will be asked once only */
+
+    if (questionIndex === 0) {
+        let randomQuestions = shuffleArray(questions);
+    }
+
+    let currentQuestion = questions[questionIndex];
 
     let container = document.getElementById("container");
 
@@ -69,6 +81,8 @@ function startQuiz() {
 
     let quizArea = document.createElement("div");
     quizArea.id = "quiz-area";
+
+    /* Creates a heading to display the question */
 
     let questionOption = document.createElement("h2");
     questionOption.textContent = questions[questionIndex].question;
@@ -113,8 +127,12 @@ function checkAnswer(event) {
 
     if (questionIndex < questions.length) {
         startQuiz();
+    } else {
+        alert("Congratulations Imperator! You have conquered the quiz!");
     }
 }
+
+
 
 
 
