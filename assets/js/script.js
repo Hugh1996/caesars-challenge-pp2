@@ -1,5 +1,4 @@
 
-
 /* List of questions */
 
 let questions = [
@@ -92,7 +91,7 @@ function startQuiz() {
 
     let questionNumber = document.createElement("p");
     questionNumber.id = "num";
-    questionNumber.textContent = (questionIndex + 1) + " / " + questions.length;
+    questionNumber.textContent = `${questionIndex + 1} / ${questions.length}`;
     quizArea.appendChild(questionNumber);
 
     for (let option of questions[questionIndex].options) {
@@ -112,13 +111,18 @@ function startQuiz() {
 
 function checkAnswer(event) {
 
-    let selectOption = event.target.textContent;
+    let selectOption = event.target;
+    let selectAnswer = event.target.textContent;
     let correctAnswer = questions[questionIndex].answer;
 
-    if (selectOption === correctAnswer) {
+    if (selectAnswer === correctAnswer) {
+        selectOption.style.border = "4px solid green";
         alert("Correct!");
+        console.log("Correct");
     } else {
+        selectOption.style.border = "4px solid red";
         alert("Incorrect!");
+        console.log("Incorrect");
     }
 
     questionIndex++;
@@ -126,7 +130,7 @@ function checkAnswer(event) {
     /* Calls next question */
 
     if (questionIndex < questions.length) {
-        startQuiz();
+        setTimeout(startQuiz, 750);
     } else {
         alert("Congratulations Imperator! You have conquered the quiz!");
     }
