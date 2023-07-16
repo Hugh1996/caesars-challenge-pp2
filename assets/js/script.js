@@ -35,10 +35,27 @@ let questions = [
         question: "Which Roman Emperor named his horse senator?",
         options: ["Caligula", "Nero", "Caracalla", "Domitian"],
         answer: "Caligula"
+    },
+    {
+        question: "Where is Hadrian's Wall located?",
+        options: ["England", "Italy", "Spain", "Turkey"],
+        answer: "England"
+    },
+    {
+        question: "Who was the first Roman Emperor to convert to Christianity?",
+        options: ["Severus Alexander", "Constantine I", "Diocletian", "Vespasian"],
+        answer: "Constantine I"
+    },
+    {
+        question: "Under which emperor did Rome reach its zenith?",
+        options: ["Hadrian", "Nerva", "Marcus Aurelius", "Trajan"],
+        answer: "Trajan"
     }
+
+
 ];
 
-/* Produces 5 random questions out of a total of 7 */
+/* Produces random questions */
 
 let questionIndex = Math.floor(Math.random() * questions.length);
 
