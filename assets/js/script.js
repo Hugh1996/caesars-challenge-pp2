@@ -79,6 +79,8 @@ function startQuiz() {
 
     let container = document.getElementById("container");
 
+    /* Clears container */
+
     container.innerHTML = "";
 
     let quizArea = document.createElement("div");
@@ -141,10 +143,27 @@ function checkAnswer(event) {
     if (questionIndex < totalQuestions) {
         setTimeout(startQuiz, 750);
     } else {
-        alert("Congratulations Imperator! You have conquered the quiz!");
+        endScore();
     }
 }
 
+function endScore() {
+
+    /* Clears container */
+
+    container.innerHTML = "";
+
+    let myResult = document.createElement("h2");
+    myResult.id = "my-result";
+    myResult.textContent = "Your score is: " + score;
+    container.appendChild(myResult);
+
+    let resultText = document.createElement("p");
+    resultText.id = "result-text";
+    resultText.textContent = "Congratulations";
+    container.appendChild(resultText);
+
+}
 
 
 
