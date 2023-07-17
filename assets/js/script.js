@@ -72,6 +72,7 @@ function startQuiz() {
 
     if (questionIndex === 0) {
         let randomQuestions = shuffleArray(questions);
+        questions = randomQuestions;
     }
 
     let currentQuestion = questions[questionIndex];
@@ -105,10 +106,10 @@ function startQuiz() {
 
     }
 
-    let score = document.createElement("p");
-    score.id = "score";
-    score.textContent = "Score: 0";
-    container.appendChild(score);
+    let myScore = document.createElement("p");
+    myScore.id = "score";
+    myScore.textContent = "Score: " + score;
+    container.appendChild(myScore);
 
     container.appendChild(quizArea);
 
@@ -126,7 +127,6 @@ function checkAnswer(event) {
         selectOption.style.border = "5px solid green";
         alert("Correct!");
         score += 10;
-        document.getElementById("score").textContent = "Score: " + score;
         console.log("Correct");
     } else {
         selectOption.style.border = "5px solid red";
@@ -145,9 +145,6 @@ function checkAnswer(event) {
     }
 }
 
-function calculateScore() {
-    document.getElementById("score").textContent = "Score: " + score;
-}
 
 
 
