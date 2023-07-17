@@ -58,6 +58,7 @@ let questions = [
 
 let questionIndex = 0;
 let totalQuestions = 6;
+let score = 0;
 
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
@@ -104,6 +105,11 @@ function startQuiz() {
 
     }
 
+    let score = document.createElement("p");
+    score.id = "score";
+    score.textContent = "Score: 0";
+    container.appendChild(score);
+
     container.appendChild(quizArea);
 
 }
@@ -119,6 +125,8 @@ function checkAnswer(event) {
     if (selectAnswer === correctAnswer) {
         selectOption.style.border = "5px solid green";
         alert("Correct!");
+        score += 10;
+        document.getElementById("score").textContent = "Score: " + score;
         console.log("Correct");
     } else {
         selectOption.style.border = "5px solid red";
@@ -137,7 +145,11 @@ function checkAnswer(event) {
     }
 }
 
+function calculateScore() {
+    document.getElementById("score").textContent = "Score: " + score;
+}
 
 
 
-;
+
+
