@@ -3,6 +3,7 @@
 :root {
     background: url(../images/centurion.jpg) no-repeat center center;
     font-size: 62.5%;
+    height: 100%;
 }
 
 /* Select Bodoni font and resets all margin and padding */
@@ -94,7 +95,6 @@ h2 {
     cursor: url(../images/sword.png), auto;
     transform: scale(1.1);
     border-radius: 5px;
-    background-color: darkmagenta;
 }
 
 #num {

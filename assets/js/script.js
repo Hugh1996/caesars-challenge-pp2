@@ -57,6 +57,7 @@ let questions = [
 ];
 
 let questionIndex = 0;
+let totalQuestions = 6;
 
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
@@ -91,7 +92,7 @@ function startQuiz() {
 
     let questionNumber = document.createElement("p");
     questionNumber.id = "num";
-    questionNumber.textContent = `${questionIndex + 1} / ${questions.length}`;
+    questionNumber.textContent = `${questionIndex + 1} / ${totalQuestions}`;
     quizArea.appendChild(questionNumber);
 
     for (let option of questions[questionIndex].options) {
@@ -116,12 +117,12 @@ function checkAnswer(event) {
     let correctAnswer = questions[questionIndex].answer;
 
     if (selectAnswer === correctAnswer) {
-        selectOption.style.border = "4px solid green";
+        selectOption.style.border = "5px solid green";
         alert("Correct!");
         console.log("Correct");
     } else {
-        selectOption.style.border = "4px solid red";
-        alert("Incorrect!");
+        selectOption.style.border = "5px solid red";
+        alert(`Incorrect! The correct answer is: ${correctAnswer}`);
         console.log("Incorrect");
     }
 
@@ -129,7 +130,7 @@ function checkAnswer(event) {
 
     /* Calls next question */
 
-    if (questionIndex < questions.length) {
+    if (questionIndex < totalQuestions) {
         setTimeout(startQuiz, 750);
     } else {
         alert("Congratulations Imperator! You have conquered the quiz!");
@@ -139,4 +140,4 @@ function checkAnswer(event) {
 
 
 
-
+;
