@@ -59,6 +59,7 @@ let questions = [
 let questionIndex = 0;
 let totalQuestions = 6;
 let score = 0;
+let currentQuestion = 0;
 
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
@@ -75,7 +76,7 @@ function startQuiz() {
         questions = randomQuestions;
     }
 
-    let currentQuestion = questions[questionIndex];
+    currentQuestion = questions[questionIndex];
 
     let container = document.getElementById("container");
 
@@ -149,24 +150,37 @@ function checkAnswer(event) {
     }
 }
 
+/* Function for final score */
+
 function endScore() {
 
     /* Clears container */
 
     container.innerHTML = "";
 
+    let finalScore = score;
+    let congrats = "";
+
+    if (finalScore >= 60) {
+        congrats = "Imperator, you have conquered all!";
+    } else if (finalScore >= 30) {
+        congrats = "Legate, you are victorious!";
+    } else {
+        congrats = "Tribune, attack again!";
+    }
+
+
     let myResult = document.createElement("h2");
     myResult.id = "my-result";
-    myResult.textContent = "Your score is: " + score;
+    myResult.textContent = "End of Quiz! Your score is: " + score;
     container.appendChild(myResult);
 
     let resultText = document.createElement("p");
     resultText.id = "result-text";
-    resultText.textContent = "Congratulations";
+    resultText.textContent = congrats;
     container.appendChild(resultText);
 
 }
-
 
 
 
