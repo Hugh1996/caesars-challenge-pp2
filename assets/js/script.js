@@ -180,7 +180,30 @@ function endScore() {
     resultText.textContent = congrats;
     container.appendChild(resultText);
 
+    let form = document.createElement("form");
+
+    let usernameLabel = document.createElement("label");
+    usernameLabel.textContent = "Username";
+    let usernameInput = document.createElement("input");
+    usernameInput.type = "text";
+    usernameInput.name = "username";
+
+    let save = document.createElement("button");
+    save.id = "end-btn";
+    save.textContent = "Save";
+
+    let goHome = document.createElement("button");
+    goHome.id = "end-btn";
+    goHome.textContent = "Go Home";
+
+    form.appendChild(usernameLabel);
+    form.appendChild(usernameInput);
+    form.appendChild(save);
+    form.appendChild(goHome);
+
+    container.appendChild(form);
 }
+
 
 
 
