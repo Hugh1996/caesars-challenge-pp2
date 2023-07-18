@@ -23,7 +23,7 @@ body {
     height: 100vh;
 }
 
-/* Styles container area */
+/* Container area styling */
 
 #container {
     position: relative;
@@ -46,7 +46,6 @@ body {
 /* Button styling */
 
 .main-btn {
-    text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -99,7 +98,7 @@ h2 {
     border-radius: 5px;
 }
 
-/* Question count */
+/* Question count styling */
 
 #num {
     position: absolute;
@@ -109,7 +108,7 @@ h2 {
     padding: 2.5rem;
 }
 
-/* Scoring system */
+/* Scoring system styling */
 
 #score {
     position: absolute;
@@ -119,11 +118,66 @@ h2 {
     font-weight: bold;
 }
 
-/* End score results */
+/* End score results styling */
+
+#my-result {
+    font-weight: bold;
+    font-size: 2.7rem;
+}
 
 #result-text {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.7rem;
+}
+
+/* End page buttons and input box styling */
+
+label {
+    margin: 6rem;
+    font-size: 2.1rem;
+    font-weight: bold;
+    cursor: url(../images/sword.png), auto;
+}
+
+label:active {
+    cursor: url(../images/sword.png), auto;
+}
+
+#go-home {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    width: 12rem;
+    height: 3rem;
+}
+
+#save {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    width: 12rem;
+    height: 3rem;
+}
+
+#go-home:active,
+#go-home:hover,
+#save:active,
+#save:hover {
+    cursor: url(../images/sword.png), auto;
+    transform: scale(1.1);
+    border-radius: 5px;
+    background-color: darkmagenta;
 }
 
 /* Media query for mobile devices */

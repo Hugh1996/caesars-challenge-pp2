@@ -183,17 +183,17 @@ function endScore() {
     let form = document.createElement("form");
 
     let usernameLabel = document.createElement("label");
-    usernameLabel.textContent = "Username";
+    usernameLabel.textContent = "Username:";
     let usernameInput = document.createElement("input");
     usernameInput.type = "text";
     usernameInput.name = "username";
 
     let save = document.createElement("button");
-    save.id = "end-btn";
+    save.id = "save";
     save.textContent = "Save";
 
     let goHome = document.createElement("button");
-    goHome.id = "end-btn";
+    goHome.id = "go-home";
     goHome.textContent = "Go Home";
 
     form.appendChild(usernameLabel);
@@ -203,8 +203,6 @@ function endScore() {
 
     container.appendChild(form);
 }
-
-
 
 
 
