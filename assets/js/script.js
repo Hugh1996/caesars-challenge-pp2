@@ -64,7 +64,7 @@ function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
 
-/* Empties container div and populates quiz questions */
+/* Empties container div and populates quiz content */
 
 function startQuiz() {
 
@@ -108,6 +108,8 @@ function startQuiz() {
 
     }
 
+    /* Creates score paragraph */
+
     let myScore = document.createElement("p");
     myScore.id = "score";
     myScore.textContent = "Score: " + score;
@@ -117,7 +119,7 @@ function startQuiz() {
 
 }
 
-/* Compares selected option with correct answer */
+/* Compares selected option with correct answer and if correct, increments score */
 
 function checkAnswer(event) {
 
@@ -136,9 +138,9 @@ function checkAnswer(event) {
         console.log("Incorrect");
     }
 
-    questionIndex++;
-
     /* Calls next question */
+
+    questionIndex++;
 
     if (questionIndex < totalQuestions) {
         setTimeout(startQuiz, 750);

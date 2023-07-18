@@ -1,7 +1,8 @@
 /* Sets background image and font size to 10px */
 
 :root {
-    background: url(../images/centurion.jpg) no-repeat center center;
+    background: url(../images/centurion.jpg) no-repeat center top;
+    background-size: cover;
     font-size: 62.5%;
     height: 100%;
 }
@@ -112,4 +113,33 @@ h2 {
     padding-bottom: 2.5rem;
     font-size: 2.2rem;
     font-weight: bold;
+}
+
+/* Media query for mobile devices */
+
+@media (max-width: 480px) {
+
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        justify-content: center;
+        font-size: 2rem;
+        margin: 4rem 0 4rem 0;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.2rem;
+        padding-bottom: 5rem;
+    }
+
+    .quiz-btn {
+        width: 30rem;
+        font-size: 1.5rem;
+    }
+
 }
