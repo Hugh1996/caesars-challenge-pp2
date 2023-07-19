@@ -109,13 +109,18 @@ function startQuiz() {
 
     }
 
+    /* Create feedback paragraph */
+
+    let displayFeedback = document.createElement("p");
+    displayFeedback.id = "feedback";
+    quizArea.appendChild(displayFeedback);
+
     /* Creates score paragraph */
 
     let myScore = document.createElement("p");
     myScore.id = "score";
     myScore.textContent = "Score: " + score;
     container.appendChild(myScore);
-
     container.appendChild(quizArea);
 
 }
@@ -127,17 +132,22 @@ function checkAnswer(event) {
     let selectOption = event.target;
     let selectAnswer = event.target.textContent;
     let correctAnswer = questions[questionIndex].answer;
+    let feedbackResult;
 
     if (selectAnswer === correctAnswer) {
         selectOption.style.border = "5px solid green";
-        alert("Correct!");
+        feedbackResult = "Correct!";
         score += 10;
         console.log("Correct");
     } else {
         selectOption.style.border = "5px solid red";
-        alert(`Incorrect! The correct answer is: ${correctAnswer}`);
+        feedbackResult = `Incorrect! The correct answer is: ${correctAnswer}`;
         console.log("Incorrect");
+
     }
+
+    let feedback = document.getElementById("feedback");
+    feedback.textContent = feedbackResult;
 
     /* Calls next question */
 
@@ -172,7 +182,7 @@ function endScore() {
 
     let myResult = document.createElement("h2");
     myResult.id = "my-result";
-    myResult.textContent = "End of Quiz! Your score is: " + score;
+    myResult.textContent = "Your score is: " + score;
     container.appendChild(myResult);
 
     let resultText = document.createElement("p");
