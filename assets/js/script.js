@@ -69,6 +69,8 @@ function shuffleArray(array) {
 
 function startQuiz() {
 
+    console.log("Start Quiz");
+
     /* Ensures a random question that will be asked once only */
 
     if (questionIndex === 0) {
