@@ -72,8 +72,10 @@ function startQuiz() {
     /* Ensures a random question that will be asked once only */
 
     if (questionIndex === 0) {
+
         let randomQuestions = shuffleArray(questions);
         questions = randomQuestions;
+
     }
 
     currentQuestion = questions[questionIndex];
@@ -101,6 +103,7 @@ function startQuiz() {
     quizArea.appendChild(questionNumber);
 
     for (let option of questions[questionIndex].options) {
+
         let answer = document.createElement("button");
         answer.className = "quiz-btn";
         answer.textContent = option;
@@ -135,14 +138,16 @@ function checkAnswer(event) {
     let feedbackResult;
 
     if (selectAnswer === correctAnswer) {
+
         selectOption.style.border = "5px solid green";
-        feedbackResult = "Correct!";
         score += 10;
-        console.log("Correct");
+        console.log("Correct answer");
+
     } else {
+
         selectOption.style.border = "5px solid red";
-        feedbackResult = `Incorrect! The correct answer is: ${correctAnswer}`;
-        console.log("Incorrect");
+        feedbackResult = `The correct answer is: ${correctAnswer}`;
+        console.log("Incorrect answer");
 
     }
 
@@ -154,9 +159,13 @@ function checkAnswer(event) {
     questionIndex++;
 
     if (questionIndex < totalQuestions) {
+
         setTimeout(startQuiz, 750);
+
     } else {
+
         endScore();
+
     }
 }
 
@@ -171,12 +180,22 @@ function endScore() {
     let finalScore = score;
     let congrats = "";
 
+    /* Saves user score */
+
+    localStorage.setItem("userScore", finalScore);
+
     if (finalScore >= 60) {
+
         congrats = "Imperator, you have conquered all!";
+
     } else if (finalScore >= 30) {
+
         congrats = "Legate, you are victorious!";
+
     } else {
+
         congrats = "Tribune, attack again!";
+
     }
 
 
@@ -192,9 +211,8 @@ function endScore() {
 
     let form = document.createElement("form");
 
-    let usernameLabel = document.createElement("label");
-    usernameLabel.textContent = "Username:";
     let usernameInput = document.createElement("input");
+    usernameInput.placeholder = "Username";
     usernameInput.type = "text";
     usernameInput.name = "username";
 
@@ -206,13 +224,26 @@ function endScore() {
     goHome.id = "go-home";
     goHome.textContent = "Go Home";
 
-    form.appendChild(usernameLabel);
     form.appendChild(usernameInput);
     form.appendChild(save);
     form.appendChild(goHome);
 
     container.appendChild(form);
+
+
 }
+
+function highScore() {
+
+    container.innerHTML = "";
+
+    let userScore = localStorage.getItem("userScore");
+
+
+}
+
+
+
 
 
 

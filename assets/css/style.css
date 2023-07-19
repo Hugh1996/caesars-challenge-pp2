@@ -1,31 +1,38 @@
 /* Sets background image and font size to 10px */
 
 :root {
+
     background: url(../images/centurion.jpg) no-repeat center top;
     background-size: cover;
     font-size: 62.5%;
     height: 100%;
+
 }
 
 /* Select Bodoni font and resets all margin and padding */
 
 * {
+
     font-family: 'Libre Bodoni', sans-serif;
     border: none;
     margin: 0;
     padding: 0;
+
 }
 
 body {
+
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+
 }
 
 /* Container area styling */
 
 #container {
+
     position: relative;
     width: 750px;
     min-height: 500px;
@@ -35,17 +42,21 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
+
 }
 
 .heading {
+
     font-size: 3rem;
     color: black;
     margin: 6rem 0 6rem 0;
+
 }
 
 /* Button styling */
 
 .main-btn {
+
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -55,31 +66,39 @@ body {
     color: black;
     width: 15rem;
     height: 3rem;
+
 }
 
 .main-btn:active,
 .main-btn:hover {
+
     cursor: url(../images/sword.png), auto;
     transform: scale(1.1);
     border-radius: 5px;
     background-color: darkmagenta;
+
 }
 
 /* Quiz styling */
 
 #quiz-area {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 h2 {
+
     font-size: 2.5rem;
     padding-bottom: 5rem;
+
 }
 
 .quiz-btn {
+
     display: block;
     text-align: center;
     border: 1px solid black;
@@ -89,66 +108,79 @@ h2 {
     padding: 0.5rem;
     font-size: 1.8rem;
     border-radius: 5px;
+
 }
 
 .quiz-btn:active,
 .quiz-btn:hover {
+
     cursor: url(../images/sword.png), auto;
     transform: scale(1.1);
     border-radius: 5px;
+
 }
 
 /* Question count styling */
 
 #num {
+
     position: absolute;
     top: 0;
     font-size: 2.2rem;
     font-weight: bold;
     padding: 2.5rem;
+
 }
 
 /* Scoring system styling */
 
 #score {
+
     position: absolute;
     bottom: 0;
     padding-bottom: 2.5rem;
     font-size: 2.2rem;
     font-weight: bold;
+
 }
 
 /* End score results styling */
 
 #my-result {
+
     font-weight: bold;
     font-size: 2.7rem;
+
 }
 
+
 #result-text {
+
+    margin-bottom: 3rem;
     font-weight: bold;
     font-size: 2.7rem;
+
 }
 
 /* End page buttons and input box styling */
 
-label {
-    margin: 6rem;
-    font-size: 2.1rem;
-    font-weight: bold;
-    cursor: url(../images/sword.png), auto;
-}
+input {
 
-label:active {
-    cursor: url(../images/sword.png), auto;
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 25px;
+    width: 110px;
+
 }
 
 #go-home {
+
     display: block;
     font-size: 2rem;
     font-weight: bold;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
     border: 1px solid black;
     border-radius: 5px;
@@ -156,28 +188,43 @@ label:active {
     color: black;
     width: 12rem;
     height: 3rem;
+
 }
 
 #save {
+
     font-size: 2rem;
     font-weight: bold;
-    margin: 5rem;
+    margin: 1rem;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
     color: black;
     width: 12rem;
     height: 3rem;
+
 }
 
 #go-home:active,
 #go-home:hover,
 #save:active,
 #save:hover {
+
     cursor: url(../images/sword.png), auto;
     transform: scale(1.1);
     border-radius: 5px;
     background-color: darkmagenta;
+
+}
+
+/* Styling for feedback */
+
+#feedback {
+
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+
 }
 
 /* Media query for mobile devices */
@@ -185,26 +232,34 @@ label:active {
 @media (max-width: 480px) {
 
     #container {
+
         flex-direction: column;
         align-items: center;
+
     }
 
     .heading {
+
         justify-content: center;
         font-size: 2rem;
         margin: 4rem 0 4rem 0;
+
     }
 
     h2 {
+
         display: flex;
         justify-content: center;
         font-size: 2.2rem;
         padding-bottom: 5rem;
+
     }
 
     .quiz-btn {
+
         width: 30rem;
         font-size: 1.5rem;
+
     }
 
 }
