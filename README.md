@@ -81,6 +81,16 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 ## Deployment
 
+- The site was deployed using GitHub Pages. To deploy, follow the below steps;
+
+- In the repository, click on 'Settings'.
+
+- Scroll down on the left hand side and select 'Pages'.
+
+- Here will you will find a link to the live webpage.
+
+- View the live website here - [Caesars Challenge](https://hugh1996.github.io/caesars-challenge-pp2/).
+
 ## Technologies Used
 
 - ### Languages
