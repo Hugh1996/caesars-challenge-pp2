@@ -30,6 +30,24 @@ Insert responsive image here
 
 ## Features
 
+- ### Main Image
+
+  - The main background image will be one of the first things the user sees. It portrarys a roman centurion in the midst of chaos and battle.
+
+  - The image's coloring follows the main color theme throughout the site, maintaing a visually appealing experience for the user.
+
+- ### Main Page
+
+  - Centered in the main page is a container where the user will interact with the site. Centered, its the title of the page, which tells the user the name and purpose of the site in one sentence.
+
+  - There is also two buttons for user interaction, one where they may start the quiz and a second, where they can view any previous saved high scores.
+
+![Main Page](./assets/images2/main.jpg)
+
+- ### Quiz Page
+
+![Quiz Page](./assets/images2/quiz.jpg)
+
 ## Testing
 
 ### Testing Stories from User Experience
