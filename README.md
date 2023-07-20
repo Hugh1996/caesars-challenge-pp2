@@ -10,6 +10,18 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 ## User Stories
 
+- First Time Visitor Goals
+
+  - As a first time visitor, I want to be able to easily understand the main purpose of the website.
+
+  - As a first time visitor, I want to be able to easily navigate through the site.
+
+  - As a first time visitor, I want to know what the site offers.
+
+- Returning Visitor Goals 
+
+  - 
+
 ## Design
 
 - ### Color Scheme
@@ -75,9 +87,17 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   -
 
-### Testing Stories from User Experience
+- ### Further Testing
 
-- Bugs
+  - I tested this page works in different browsers: Google Chrome, Microsoft Edge.
+
+  - I confirmed the project is responsive on all standard screen sizes using Google Chrome dev tools and [Am I Responsive](https://ui.dev/amiresponsive).
+
+  - Friends and family confirmed the site color scheme and font style works well together.
+
+### Bugs 
+
+Adding Favicon
 
 ## Deployment
 
@@ -113,8 +133,6 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
   - Quiz questions inspiration were taken from [Britannica](https://www.britannica.com/).
 
 - ### Media
-
-  - The responsive image was generated using [Am I Responsive](https://ui.dev/amiresponsive).
 
   - The main background image was taken from [Wallpaper Cave](https://wallpapercave.com/).
 
