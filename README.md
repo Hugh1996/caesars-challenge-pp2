@@ -38,13 +38,15 @@ Insert responsive image here
 
 - ### Main Page
 
-  - Centered in the main page is a container where the user will interact with the site. Centered, its the title of the page, which tells the user the name and purpose of the site in one sentence.
+  - Centered in the main page is a container where the user will interact with the site. Centered, is the title of the page, which informs the user the name and purpose of the site.
 
-  - There is also two buttons for user interaction, one where they may start the quiz and a second, where they can view any previous saved high scores.
+  - There is also two buttons for user interaction, one where they may start the quiz and a second, where they can view any previously saved high scores.
 
 ![Main Page](./assets/images2/main.jpg)
 
 - ### Quiz Page
+
+  - 
 
 ![Quiz Page](./assets/images2/quiz.jpg)
 
