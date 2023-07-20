@@ -4,7 +4,7 @@ Caesars Challenge is an engaging quiz centered around the history of the Roman E
 
 This quiz caters to users with varying levels of knowledge about ancient Rome, making it suitable for both enthusiasts and those simply seeking to learn more about its history.
 
-Insert responsive image here
+![Responsiveness](./assets/images2/responsive.jpg)
 
 # User Experience (UX)
 
@@ -22,7 +22,7 @@ Insert responsive image here
 
   - All buttons have a white background. White was chosen due to its clean aesthethic while ensuring they stand out against the red background and black text, to maintain readability.
 
-  - Each button has a hover effect to transform from white into into Roman imperial purple. This continues with the theme of historical accuracy throughout the site. It also helps to reinforce the interacivity of the bottons.
+  - Each button has a hover effect to transform from white into Roman imperial purple. This continues with the theme of historical accuracy throughout the site. The cursor also changes to a sword when hovering over the button. These both help to reinforce the interacivity of the bottons.
 
 - ### Typography
 
@@ -46,11 +46,34 @@ Insert responsive image here
 
 - ### Quiz Page
 
-  - 
+  - Once the user selects 'Start Quiz', they are presented with a question and four options. The user must select one of the four options as their answer. When hovering over an option with the cursor, it increases the size of the button and the cursor changes to a sword.
+
+  - During the quiz, the user will be informed about their progress by displaying the current question number at the top of the container.
+
+  - The quiz consists of six questions in total. These questions are chosen randomly from a pool of ten possible questions to prevent repetitiveness in case the user attempts the quiz again.
+
+  - If the user selects the correct answer, its border will be highlighted in green as feedback for the user to confirm their answer was correct. Additionally, the user's score will be increased by 10 points for each correct answer, and the total score will be displayed at the bottom of the container.
+
+  - If the user selects an incorrect answer, the border of the chosen option will be highlighted in red, providing feedback to confirm that the answer selected is incorrect. Additionally, the correct answer will be briefly displayed just below the four possible options, allowing the user to see the right answer.
+  -
 
 ![Quiz Page](./assets/images2/quiz.jpg)
 
 ## Testing
+
+### Validator Testing
+
+- HTML
+
+  -
+
+- CSS
+
+  -
+
+- JavaScript
+
+  -
 
 ### Testing Stories from User Experience
 
@@ -60,12 +83,29 @@ Insert responsive image here
 
 ## Technologies Used
 
-- Languages
+- ### Languages
 
-- Libraries and Programs
+  - HTML5
+  - CSS3
+  - JavaScript
+
+- ### Libraries and Programs
+
+  - Google Fonts
+  - Git
+  - Github
+  - Codeanywhere
 
 ## Credits
 
-- Content
+- ### Content
 
-- Media
+  - Quiz questions inspiration were taken from [Britannica](https://www.britannica.com/).
+
+- ### Media
+
+  - The responsive image was generated using [Am I Responsive](https://ui.dev/amiresponsive).
+
+  - The main background image was taken from [Wallpaper Cave](https://wallpapercave.com/).
+
+  - The cursor image used on hover effects was taken from [Cursors-4U](https://www.cursors-4u.com).
