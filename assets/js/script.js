@@ -103,6 +103,8 @@ function checkAnswer(event) {
 // Function for final score //
 function endScore() {
 
+    let container = document.getElementById("container");
+
     // Clears container //
     container.innerHTML = "";
 
@@ -126,7 +128,7 @@ function endScore() {
 
     } else {
 
-        congrats = "Tribune, attack!"; // Displays when user gets low result
+        congrats = "Tribune, try again!"; // Displays when user gets low result
 
     }
 
@@ -144,14 +146,23 @@ function endScore() {
     let playAgain = document.createElement("button");
     playAgain.className = "play-again";
     playAgain.textContent = "Play Again";
+    playAgain.addEventListener("click", () => {
+
+        questionIndex = 0;
+        score = 0;
+        startQuiz(); // Calls startQuiz when the user selects Play Again
+
+    });
+
     container.appendChild(playAgain);
 
-    let goHome = document.createElement("button");
-    goHome.className = "go-home";
-    goHome.textContent = "Go Home";
-    container.appendChild(goHome);
-
 }
+
+
+let goHome = document.createElement("button");
+goHome.className = "go-home";
+goHome.textContent = "Go Home";
+container.appendChild(goHome);
 
 function highScore() {
 
@@ -162,6 +173,6 @@ function highScore() {
 
 
 
-endScore();
+
 
 
