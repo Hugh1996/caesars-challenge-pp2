@@ -7,10 +7,10 @@ function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
 
-/* Empties container div and populates quiz content */
+// Empties container div and populates quiz content //
 function startQuiz() {
 
-    /* Ensures a random question that will be asked once only */
+    // Ensures a random question that will be asked once only //
     if (questionIndex === 0) {
 
         let randomQuestions = shuffleArray(questions);
@@ -22,18 +22,18 @@ function startQuiz() {
 
     let container = document.getElementById("container");
 
-    /* Clears container */
+    // Clears container //
     container.innerHTML = "";
 
     let quizArea = document.createElement("div");
     quizArea.className = "quiz-area";
 
-    /* Creates a heading to display the question */
+    // Creates a heading to display the question //
     let questionOption = document.createElement("h2");
     questionOption.textContent = questions[questionIndex].question;
     quizArea.appendChild(questionOption);
 
-    /* Creates paragraph to display question count */
+    // Creates paragraph to display question count //
     let questionNumber = document.createElement("p");
     questionNumber.className = "num";
     questionNumber.textContent = `${questionIndex + 1} / ${totalQuestions}`;
@@ -49,12 +49,12 @@ function startQuiz() {
 
     }
 
-    /* Create feedback paragraph */
+    // Create feedback paragraph //
     let displayFeedback = document.createElement("p");
     displayFeedback.id = "feedback";
     quizArea.appendChild(displayFeedback);
 
-    /* Creates score paragraph */
+    // Creates score paragraph //
     let myScore = document.createElement("p");
     myScore.className = "score";
     myScore.textContent = "Score: " + score;
@@ -63,7 +63,7 @@ function startQuiz() {
 
 }
 
-/* Compares selected option with correct answer and if correct, increments score */
+// Compares selected option with correct answer and if correct, increments score //
 function checkAnswer(event) {
 
     let selectOption = event.target;
@@ -74,24 +74,24 @@ function checkAnswer(event) {
     if (selectAnswer === correctAnswer) {
 
         selectOption.style.border = "5px solid green";
-        score += 10;
+        score += 10; // Increments score by 10
 
     } else {
 
         selectOption.style.border = "5px solid red";
-        feedbackResult = `The correct answer is: ${correctAnswer}`;
+        feedbackResult = `The correct answer is: ${correctAnswer}`; // Displays correct answer
 
     }
 
     const feedback = document.getElementById("feedback");
     feedback.textContent = feedbackResult;
 
-    /* Calls next question */
+    // Calls next question //
     questionIndex++;
 
     if (questionIndex < totalQuestions) {
 
-        setTimeout(startQuiz, 750);
+        setTimeout(startQuiz, 1000); // Correct answer disappears after one second
 
     } else {
 
@@ -100,10 +100,10 @@ function checkAnswer(event) {
     }
 }
 
-/* Function for final score */
+// Function for final score //
 function endScore() {
 
-    /* Clears container */
+    // Clears container //
     container.innerHTML = "";
 
     let finalScore = score;
