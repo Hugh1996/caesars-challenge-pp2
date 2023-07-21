@@ -106,20 +106,27 @@ function endScore() {
     // Clears container //
     container.innerHTML = "";
 
+    const congratsResult = {
+
+        HIGH: "60",
+        MID: "30"
+
+    };
+
     let finalScore = score;
     let congrats = "";
 
-    if (finalScore >= 60) {
+    if (finalScore >= congratsResult.HIGH) {
 
-        congrats = "Imperator, you have conquered all!";
+        congrats = "Imperator, you have conquered all!"; // Displays when user gets HIGH result
 
-    } else if (finalScore >= 30) {
+    } else if (finalScore >= congratsResult.MID) {
 
-        congrats = "Legate, you are victorious!";
+        congrats = "Legate, you are victorious!"; // Displays when user gets MID result
 
     } else {
 
-        congrats = "Tribune, attack again!";
+        congrats = "Tribune, attack!"; // Displays when user gets low result
 
     }
 
