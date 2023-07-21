@@ -1,7 +1,7 @@
 
 /* List of questions */
 
-let questions = [
+const questions = [
     {
         question: "Who was the first Roman Emperor?",
         options: ["Augustus", "Julius Caesar", "Marcus Aurelius", "Constantine"],
@@ -182,10 +182,6 @@ function endScore() {
     let finalScore = score;
     let congrats = "";
 
-    /* Saves user score */
-
-    localStorage.setItem("userScore", finalScore);
-
     if (finalScore >= 60) {
 
         congrats = "Imperator, you have conquered all!";
@@ -238,9 +234,6 @@ function endScore() {
 function highScore() {
 
     container.innerHTML = "";
-
-    let userScore = localStorage.getItem("userScore");
-
 
 }
 
