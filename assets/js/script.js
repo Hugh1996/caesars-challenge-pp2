@@ -1,7 +1,7 @@
 
 /* List of questions */
 
-const questions = [
+let questions = [
     {
         question: "Who was the first Roman Emperor?",
         options: ["Augustus", "Julius Caesar", "Marcus Aurelius", "Constantine"],
@@ -66,13 +66,9 @@ function shuffleArray(array) {
 }
 
 /* Empties container div and populates quiz content */
-
 function startQuiz() {
 
-    console.log("Start Quiz");
-
     /* Ensures a random question that will be asked once only */
-
     if (questionIndex === 0) {
 
         let randomQuestions = shuffleArray(questions);
@@ -85,20 +81,17 @@ function startQuiz() {
     let container = document.getElementById("container");
 
     /* Clears container */
-
     container.innerHTML = "";
 
     let quizArea = document.createElement("div");
     quizArea.id = "quiz-area";
 
     /* Creates a heading to display the question */
-
     let questionOption = document.createElement("h2");
     questionOption.textContent = questions[questionIndex].question;
     quizArea.appendChild(questionOption);
 
     /* Creates paragraph to display question count */
-
     let questionNumber = document.createElement("p");
     questionNumber.id = "num";
     questionNumber.textContent = `${questionIndex + 1} / ${totalQuestions}`;
@@ -115,13 +108,11 @@ function startQuiz() {
     }
 
     /* Create feedback paragraph */
-
     let displayFeedback = document.createElement("p");
     displayFeedback.id = "feedback";
     quizArea.appendChild(displayFeedback);
 
     /* Creates score paragraph */
-
     let myScore = document.createElement("p");
     myScore.id = "score";
     myScore.textContent = "Score: " + score;
@@ -131,7 +122,6 @@ function startQuiz() {
 }
 
 /* Compares selected option with correct answer and if correct, increments score */
-
 function checkAnswer(event) {
 
     let selectOption = event.target;
@@ -157,7 +147,6 @@ function checkAnswer(event) {
     feedback.textContent = feedbackResult;
 
     /* Calls next question */
-
     questionIndex++;
 
     if (questionIndex < totalQuestions) {
@@ -172,11 +161,9 @@ function checkAnswer(event) {
 }
 
 /* Function for final score */
-
 function endScore() {
 
     /* Clears container */
-
     container.innerHTML = "";
 
     let finalScore = score;

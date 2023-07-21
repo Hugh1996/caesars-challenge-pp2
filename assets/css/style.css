@@ -1,5 +1,4 @@
 /* Sets background image and font size to 10px */
-
 :root {
 
     background: url(../images/centurion.jpg) no-repeat center top;
@@ -10,7 +9,6 @@
 }
 
 /* Select Bodoni font and resets all margin and padding */
-
 * {
 
     font-family: 'Libre Bodoni', sans-serif;
@@ -30,7 +28,6 @@ body {
 }
 
 /* Container area styling */
-
 #container {
 
     position: relative;
@@ -54,7 +51,6 @@ body {
 }
 
 /* Button styling */
-
 .main-btn {
 
     font-size: 2rem;
@@ -80,7 +76,6 @@ body {
 }
 
 /* Quiz styling */
-
 #quiz-area {
 
     display: flex;
@@ -121,7 +116,6 @@ h2 {
 }
 
 /* Question count styling */
-
 #num {
 
     position: absolute;
@@ -133,7 +127,6 @@ h2 {
 }
 
 /* Scoring system styling */
-
 #score {
 
     position: absolute;
@@ -145,7 +138,6 @@ h2 {
 }
 
 /* End score results styling */
-
 #my-result {
 
     font-weight: bold;
@@ -163,7 +155,6 @@ h2 {
 }
 
 /* End page buttons and input box styling */
-
 input {
 
     margin: 1rem;
@@ -218,7 +209,6 @@ input {
 }
 
 /* Styling for feedback */
-
 #feedback {
 
     font-size: 2rem;
@@ -228,7 +218,6 @@ input {
 }
 
 /* Media query for mobile devices */
-
 @media (max-width: 480px) {
 
 
