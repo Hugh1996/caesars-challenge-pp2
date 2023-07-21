@@ -156,13 +156,18 @@ function endScore() {
 
     container.appendChild(playAgain);
 
+    let goHome = document.createElement("button");
+    goHome.className = "go-home";
+    goHome.textContent = "Exit";
+    goHome.addEventListener("click", () => {
+
+        window.location.href = "index.html"; // Returns user to main page when Exit button is selected
+
+    });
+    container.appendChild(goHome);
+
 }
 
-
-let goHome = document.createElement("button");
-goHome.className = "go-home";
-goHome.textContent = "Go Home";
-container.appendChild(goHome);
 
 function highScore() {
 
