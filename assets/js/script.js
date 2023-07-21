@@ -143,7 +143,7 @@ function checkAnswer(event) {
 
     }
 
-    let feedback = document.getElementById("feedback");
+    const feedback = document.getElementById("feedback");
     feedback.textContent = feedbackResult;
 
     /* Calls next question */
