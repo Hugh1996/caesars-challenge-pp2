@@ -165,14 +165,11 @@ input {
 
 }
 
-.go-home {
+.play-again {
 
-    display: block;
     font-size: 2rem;
     font-weight: bold;
-    margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin: 2rem;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
@@ -182,11 +179,14 @@ input {
 
 }
 
-.save {
+.go-home {
 
+    display: block;
     font-size: 2rem;
     font-weight: bold;
-    margin: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
@@ -198,8 +198,8 @@ input {
 
 .go-home:active,
 .go-home:hover,
-.save:active,
-.save:hover {
+.play-again:active,
+.play-again:hover {
 
     cursor: url(../images/sword.png), auto;
     transform: scale(1.1);

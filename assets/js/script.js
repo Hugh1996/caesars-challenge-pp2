@@ -141,27 +141,15 @@ function endScore() {
     resultText.textContent = congrats;
     container.appendChild(resultText);
 
-    let form = document.createElement("form");
-
-    let usernameInput = document.createElement("input");
-    usernameInput.placeholder = "Username";
-    usernameInput.type = "text";
-    usernameInput.name = "username";
-
-    let save = document.createElement("button");
-    save.className = "save";
-    save.textContent = "Save";
+    let playAgain = document.createElement("button");
+    playAgain.className = "play-again";
+    playAgain.textContent = "Play Again";
+    container.appendChild(playAgain);
 
     let goHome = document.createElement("button");
     goHome.className = "go-home";
     goHome.textContent = "Go Home";
-
-    form.appendChild(usernameInput);
-    form.appendChild(save);
-    form.appendChild(goHome);
-
-    container.appendChild(form);
-
+    container.appendChild(goHome);
 
 }
 
@@ -174,5 +162,6 @@ function highScore() {
 
 
 
+endScore();
 
 
