@@ -133,13 +133,11 @@ function checkAnswer(event) {
 
         selectOption.style.border = "5px solid green";
         score += 10;
-        console.log("Correct answer");
 
     } else {
 
         selectOption.style.border = "5px solid red";
         feedbackResult = `The correct answer is: ${correctAnswer}`;
-        console.log("Incorrect answer");
 
     }
 
