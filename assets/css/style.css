@@ -76,7 +76,7 @@ body {
 }
 
 /* Quiz styling */
-#quiz-area {
+.quiz-area {
 
     display: flex;
     flex-direction: column;
@@ -116,7 +116,7 @@ h2 {
 }
 
 /* Question count styling */
-#num {
+.num {
 
     position: absolute;
     top: 0;
@@ -127,7 +127,7 @@ h2 {
 }
 
 /* Scoring system styling */
-#score {
+.score {
 
     position: absolute;
     bottom: 0;
@@ -138,7 +138,7 @@ h2 {
 }
 
 /* End score results styling */
-#my-result {
+.my-result {
 
     font-weight: bold;
     font-size: 2.7rem;
@@ -146,7 +146,7 @@ h2 {
 }
 
 
-#result-text {
+.result-text {
 
     margin-bottom: 3rem;
     font-weight: bold;
@@ -165,7 +165,7 @@ input {
 
 }
 
-#go-home {
+.go-home {
 
     display: block;
     font-size: 2rem;
@@ -182,7 +182,7 @@ input {
 
 }
 
-#save {
+.save {
 
     font-size: 2rem;
     font-weight: bold;
@@ -196,10 +196,10 @@ input {
 
 }
 
-#go-home:active,
-#go-home:hover,
-#save:active,
-#save:hover {
+.go-home:active,
+.go-home:hover,
+.save:active,
+.save:hover {
 
     cursor: url(../images/sword.png), auto;
     transform: scale(1.1);

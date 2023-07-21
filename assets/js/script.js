@@ -26,7 +26,7 @@ function startQuiz() {
     container.innerHTML = "";
 
     let quizArea = document.createElement("div");
-    quizArea.id = "quiz-area";
+    quizArea.className = "quiz-area";
 
     /* Creates a heading to display the question */
     let questionOption = document.createElement("h2");
@@ -35,7 +35,7 @@ function startQuiz() {
 
     /* Creates paragraph to display question count */
     let questionNumber = document.createElement("p");
-    questionNumber.id = "num";
+    questionNumber.className = "num";
     questionNumber.textContent = `${questionIndex + 1} / ${totalQuestions}`;
     quizArea.appendChild(questionNumber);
 
@@ -56,7 +56,7 @@ function startQuiz() {
 
     /* Creates score paragraph */
     let myScore = document.createElement("p");
-    myScore.id = "score";
+    myScore.className = "score";
     myScore.textContent = "Score: " + score;
     container.appendChild(myScore);
     container.appendChild(quizArea);
@@ -125,12 +125,12 @@ function endScore() {
 
 
     let myResult = document.createElement("h2");
-    myResult.id = "my-result";
+    myResult.className = "my-result";
     myResult.textContent = "Your score is: " + score;
     container.appendChild(myResult);
 
     let resultText = document.createElement("p");
-    resultText.id = "result-text";
+    resultText.className = "result-text";
     resultText.textContent = congrats;
     container.appendChild(resultText);
 
@@ -142,11 +142,11 @@ function endScore() {
     usernameInput.name = "username";
 
     let save = document.createElement("button");
-    save.id = "save";
+    save.className = "save";
     save.textContent = "Save";
 
     let goHome = document.createElement("button");
-    goHome.id = "go-home";
+    goHome.className = "go-home";
     goHome.textContent = "Go Home";
 
     form.appendChild(usernameInput);
