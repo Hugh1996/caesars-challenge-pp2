@@ -2,14 +2,36 @@ let questionIndex = 0;
 let totalQuestions = 6;
 let score = 0;
 let currentQuestion = 0;
+let username = "";
 
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
 
+// Saves username and disables input field after //
+function saveUsername() {
+
+    let inputUsername = document.getElementById("username");
+    let inputValue = inputUsername.value.trim();
+
+    if (inputValue !== "") {
+
+        username = inputValue;
+        inputUsername.disabled = true;
+
+    }
+}
+
 // Empties container div and populates quiz content //
 function startQuiz() {
 
+    // Displays alert to tell user to submit their username //
+    if (username === "") {
+
+        alert("Please select your username before starting the quiz.");
+        return;
+
+    }
     // Ensures a random question that will be asked once only //
     if (questionIndex === 0) {
 
