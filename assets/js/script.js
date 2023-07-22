@@ -4,6 +4,13 @@ let score = 0;
 let currentQuestion = 0;
 let username = "";
 
+if (localStorage.getItem("username",)) {
+
+    username = localStorage.getItem("username");
+    document.getElementById("username").value = username;
+
+}
+
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
@@ -17,7 +24,9 @@ function saveUsername() {
     if (inputValue !== "") {
 
         username = inputValue;
-        inputUsername.disabled = true;
+
+        localStorage.setItem("username", username); // Stores username
+        inputUsername.style.backgroundColor = "darkmagenta";
 
     }
 }
@@ -157,7 +166,7 @@ function endScore() {
 
     let myResult = document.createElement("h2");
     myResult.className = "my-result";
-    myResult.textContent = "Your score is: " + score;
+    myResult.textContent = `${username} , your score is: ${score}`;
     container.appendChild(myResult);
 
     let resultText = document.createElement("p");

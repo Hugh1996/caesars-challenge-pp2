@@ -54,9 +54,21 @@ body {
 
 #username {
 
-    height: 3rem;
-    width: 15rem;
+    width: 16rem;
+    height: 3.5rem;
+
+}
+
+#save {
+
     margin-bottom: 4rem;
+
+}
+
+#start {
+
+    height: 4rem;
+    width: 20rem;
 
 }
 
@@ -69,8 +81,8 @@ body {
     border-radius: 5px;
     text-align: center;
     color: black;
-    width: 15rem;
-    height: 3rem;
+    width: 16rem;
+    height: 3.5rem;
 
 }
 
@@ -183,8 +195,8 @@ input {
     border-radius: 5px;
     text-align: center;
     color: black;
-    width: 12rem;
-    height: 3rem;
+    width: 16rem;
+    height: 3.5rem;
 
 }
 
@@ -200,8 +212,8 @@ input {
     border-radius: 5px;
     text-align: center;
     color: black;
-    width: 12rem;
-    height: 3rem;
+    width: 16rem;
+    height: 3.5rem;
 
 }
 
