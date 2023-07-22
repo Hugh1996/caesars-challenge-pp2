@@ -25,7 +25,6 @@ function saveUsername() {
 
         username = inputValue;
         localStorage.setItem("username", username); // Stores username
-        inputUsername.style.backgroundColor = "darkmagenta";
 
     }
 }
@@ -137,8 +136,8 @@ function endScore() {
 
     const congratsResult = {
 
-        HIGH: "60",
-        MID: "30"
+        HIGH: "60", // Stores 60 as the value of HIGH //
+        MID: "30" // Stores 30 as the value of MID //
 
     };
 
@@ -195,6 +194,7 @@ function endScore() {
 
 }
 
+// Add page of instruction // 
 function toggleRules() {
 
     let container = document.getElementById("container");
@@ -231,7 +231,7 @@ function toggleRules() {
     backButton.className = "back";
     backButton.addEventListener("click", () => {
 
-        window.location.href = "index.html";
+        window.location.href = "index.html"; // Reverts to main html //
 
     });
     container.appendChild(backButton);

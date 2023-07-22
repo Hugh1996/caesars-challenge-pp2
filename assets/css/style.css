@@ -46,7 +46,7 @@ body {
 
     font-size: 3.5rem;
     color: black;
-    margin: 4rem 0 4rem 0;
+    margin: 4rem 0 6rem 0;
 
 }
 
@@ -54,15 +54,29 @@ body {
 
 #username {
 
+    background-color: rgba(211, 211, 211, 0.459);
     margin-bottom: 0;
     width: 16rem;
     height: 3.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+#username::placeholder {
+
+    color: black;
+    text-align: center;
 
 }
 
 #save {
 
-    margin-bottom: 1rem;
+    background-color: rgba(211, 211, 211, 0.459);
+    margin-bottom: 6rem;
 
 }
 
@@ -177,15 +191,6 @@ h2 {
 }
 
 /* End page buttons and input box styling */
-input {
-
-    margin: 1rem;
-    font-size: 2rem;
-    font-weight: bold;
-    height: 25px;
-    width: 110px;
-
-}
 
 .back,
 .play-again {
