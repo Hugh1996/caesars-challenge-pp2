@@ -19,12 +19,16 @@
     <div id="container">
 
         <h1 class="heading">Caesars Challenge: The Roman Empire Quiz</h1>
-        <input type="text" id="username" placeholder="Enter username" autocomplete="off">
+        <input type="text" id="username" placeholder="Enter username">
         <button id="save" class="main-btn" onclick="saveUsername()">Save</button>
         <button id="start" class="main-btn" onclick="startQuiz()">Start Quiz</button>
 
+        <div class="rules" onclick="toggleRules()">
+            <i class="fa-regular fa-circle-question"></i>
+        </div>
     </div>
 
+    <script src="https://kit.fontawesome.com/bb021deaf1.js" crossorigin="anonymous"></script>
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
 

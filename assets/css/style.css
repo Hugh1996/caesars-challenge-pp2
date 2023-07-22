@@ -46,7 +46,7 @@ body {
 
     font-size: 3.5rem;
     color: black;
-    margin: 3rem 0 4rem 0;
+    margin: 4rem 0 4rem 0;
 
 }
 
@@ -54,6 +54,7 @@ body {
 
 #username {
 
+    margin-bottom: 0;
     width: 16rem;
     height: 3.5rem;
 
@@ -61,14 +62,14 @@ body {
 
 #save {
 
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 
 }
 
 #start {
 
-    height: 4rem;
-    width: 20rem;
+    height: 5rem;
+    width: 22rem;
 
 }
 
@@ -186,6 +187,7 @@ input {
 
 }
 
+.back,
 .play-again {
 
     font-size: 2rem;
@@ -217,6 +219,8 @@ input {
 
 }
 
+.back:active,
+.back:hover,
 .go-home:active,
 .go-home:hover,
 .play-again:active,
@@ -236,6 +240,36 @@ input {
     font-weight: bold;
     margin-top: 1rem;
 
+}
+
+/* Instruction List */
+
+.rules {
+
+    padding-top: 8rem;
+    font-size: 3.2rem;
+
+}
+
+.rules:hover {
+
+    cursor: url(../images/sword.png), auto;
+    transform: scale(1.1);
+
+}
+
+h3 {
+
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+
+}
+
+li {
+    margin: 0 0 1rem 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 /* Media query for mobile devices */

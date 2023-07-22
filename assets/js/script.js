@@ -24,7 +24,6 @@ function saveUsername() {
     if (inputValue !== "") {
 
         username = inputValue;
-
         localStorage.setItem("username", username); // Stores username
         inputUsername.style.backgroundColor = "darkmagenta";
 
@@ -52,9 +51,7 @@ function startQuiz() {
     currentQuestion = questions[questionIndex];
 
     let container = document.getElementById("container");
-
-    // Clears container //
-    container.innerHTML = "";
+    container.innerHTML = ""; // Clears container //
 
     let quizArea = document.createElement("div");
     quizArea.className = "quiz-area";
@@ -100,12 +97,13 @@ function checkAnswer(event) {
     let selectOption = event.target;
     let selectAnswer = event.target.textContent;
     let correctAnswer = questions[questionIndex].answer;
-    let feedbackResult;
+    let feedbackResult = "";
 
     if (selectAnswer === correctAnswer) {
 
         selectOption.style.border = "5px solid green";
         score += 10; // Increments score by 10
+        feedbackResult = "Correct!";
 
     } else {
 
@@ -135,8 +133,6 @@ function checkAnswer(event) {
 function endScore() {
 
     let container = document.getElementById("container");
-
-    // Clears container //
     container.innerHTML = "";
 
     const congratsResult = {
@@ -199,13 +195,49 @@ function endScore() {
 
 }
 
+function toggleRules() {
 
-function highScore() {
-
+    let container = document.getElementById("container");
     container.innerHTML = "";
 
-}
+    let rulesHeading = document.createElement("h3");
+    rulesHeading.textContent = "About the Quiz";
+    container.appendChild(rulesHeading);
 
+    let rulesList = document.createElement("ul");
+
+    // List of instructions // 
+    let instructions = [
+
+        "Enter your username and click Start Quiz to begin the quiz.",
+        "You will be asked six questions. Read the question carefully.",
+        "For each question, there will be four options to choose from.",
+        "Each correct question is worth ten points. If you answer incorrectly, you get 0. The correct answer will briefly be displayed below the options.",
+        "Depending on your result, you will get a different score and message at the end of the quiz.",
+        "If you want to try again, select 'Play Again'. Otherwise you can return to the main page by clicking 'Exit'."
+
+    ];
+
+    for (let instruction of instructions) {
+        let list = document.createElement("li");
+        list.textContent = instruction;
+        rulesList.appendChild(list);
+    }
+
+    container.appendChild(rulesList);
+
+    let backButton = document.createElement("button");
+    backButton.textContent = "Back";
+    backButton.className = "back";
+    backButton.addEventListener("click", () => {
+
+        window.location.href = "index.html";
+
+    });
+    container.appendChild(backButton);
+
+
+}
 
 
 
