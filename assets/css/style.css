@@ -46,16 +46,26 @@ body {
 
     font-size: 3.5rem;
     color: black;
-    margin: 6rem 0 6rem 0;
+    margin: 4rem 0 4rem 0;
 
 }
 
 /* Button styling */
+
+#username {
+    width: 15rem;
+}
+
+#save {
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
 .main-btn {
 
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin: 1rem;
     border: 1px solid black;
     border-radius: 5px;
     text-align: center;
