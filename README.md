@@ -137,3 +137,5 @@ Adding Favicon
   - The main background image was taken from [Wallpaper Cave](https://wallpapercave.com/).
 
   - The cursor image used on hover effects was taken from [Cursors-4U](https://www.cursors-4u.com).
+
+  - The question mark icon was taken from [Font Awesome](https://fontawesome.com/).
