@@ -53,12 +53,25 @@ body {
 /* Button styling */
 
 #username {
-    width: 15rem;
+
+    height: 2.5rem;
+    width: 12rem;
+
+}
+
+#username::placeholder {
+
+    font-size: 16px;
+
 }
 
 #save {
+
     margin-top: 0;
     margin-bottom: 4rem;
+    height: 2.5rem;
+    width: 12rem;
+
 }
 
 .main-btn {
