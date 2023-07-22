@@ -54,7 +54,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - There is also two buttons for user interaction, one where they may start the quiz and a second, where they can view any previously saved high scores.
 
-![Main Page]()
+![Main Page](/images2/main.jpg)
 
 - ### Quiz Page
 
@@ -69,7 +69,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
   - If the user selects an incorrect answer, the border of the chosen option will be highlighted in red, providing feedback to confirm that the answer selected is incorrect. Additionally, the correct answer will be briefly displayed just below the four possible options, allowing the user to see the right answer.
   -
 
-![Quiz Page]()
+![Quiz Page](/images2/quiz.jpg)
 
 ## Testing
 
