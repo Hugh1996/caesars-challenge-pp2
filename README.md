@@ -50,9 +50,13 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - ### Main Page
 
-  - Centered in the main page is a container where the user will interact with the site. Centered, is the title of the page, which informs the user the name and purpose of the site.
+  - Centered in the main page is a container where the user will interact with the site. The title of the page is the first displayed, which informs the user the name and purpose of the site.
 
-  - There is also two buttons for user interaction, one where they may start the quiz and a second, where they can view any previously saved high scores.
+  - Below the title, there is an input where the user must enter their username. This username will then be saved and used to display the users score once the quiz is complete.
+
+  - The user can start their quiz by selecting the 'Start Quiz' button.
+
+  - There is also a question mark icon displayed at the bottom of the container. If selected, this will display a list of instructions for the user, on how the quiz works.
 
 ![Main Page](/images2/mainpage.jpg)
 
@@ -67,7 +71,6 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
   - If the user selects the correct answer, its border will be highlighted in green as feedback for the user to confirm their answer was correct. Additionally, the user's score will be increased by 10 points for each correct answer, and the total score will be displayed at the bottom of the container.
 
   - If the user selects an incorrect answer, the border of the chosen option will be highlighted in red, providing feedback to confirm that the answer selected is incorrect. Additionally, the correct answer will be briefly displayed just below the four possible options, allowing the user to see the right answer.
-  -
 
 ![Quiz Page](/images2/questions.jpg)
 
