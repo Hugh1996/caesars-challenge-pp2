@@ -50,14 +50,14 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - ### Main Page
 
-  - Centered in the main page is a container where the user will interact with the site. The title of the page is the first displayed, which informs the user the name and purpose of the site.
+  - Centered in the main page is a container where users will interact with the site. The title of the page is displayed first, providing information about the site's name and purpose.
 
-  - Below the title, there is an input where the user must enter their username. This username will then be saved and used to display the users score once the quiz is complete.
+  - Below the title, there is an input field where users must enter their username. Once entered, the username will be stored, and users won't need to input it again. The user's final score will be displayed along with their username.
 
-  - The user can start their quiz by selecting the 'Start Quiz' button.
+  - The user can start the quiz by selecting the 'Start Quiz' button.
 
-  - There is also a question mark icon displayed at the bottom of the container. If selected, this will display a list of instructions for the user, on how the quiz works.
-
+  - Additionally, there is a question mark icon displayed at the bottom of the container. Clicking on it will show a list of instructions explaining how the quiz works.
+  
 ![Main Page](/images2/mainpage.jpg)
 
 - ### Quiz Page

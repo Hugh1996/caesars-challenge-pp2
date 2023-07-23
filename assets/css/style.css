@@ -134,6 +134,7 @@ h2 {
     display: block;
     text-align: center;
     border: 1px solid black;
+    color: black;
     font-weight: bold;
     width: 50rem;
     margin-bottom: 1.2rem;
@@ -147,7 +148,6 @@ h2 {
 .quiz-btn:hover {
 
     cursor: url(../images/sword.png), auto;
-    transform: scale(1.1);
     border-radius: 5px;
 
 }
@@ -252,7 +252,7 @@ h2 {
 
 .rules {
 
-    padding-top: 8rem;
+    margin-top: 8rem;
     font-size: 3.2rem;
 
 }
@@ -313,6 +313,18 @@ li {
         width: 100%;
         width: 30rem;
         font-size: 1.6rem;
+
+    }
+
+    .score {
+
+        margin-top: 1rem;
+
+    }
+
+    .num {
+
+        margin-bottom: 1rem;
 
     }
 
