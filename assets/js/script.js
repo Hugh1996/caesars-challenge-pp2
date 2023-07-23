@@ -89,6 +89,11 @@ function startQuiz() {
     container.appendChild(myScore);
     container.appendChild(quizArea);
 
+    container = document.getElementById("container");
+    let rulesButton = document.getElementById("rules-button");
+    container.appendChild(rulesButton);
+
+
 }
 
 // Compares selected option with correct answer and if correct, increments score //
