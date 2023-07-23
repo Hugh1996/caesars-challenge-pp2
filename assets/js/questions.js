@@ -51,7 +51,19 @@ let questions = [
         question: "Under which emperor did Rome reach its zenith?",
         options: ["Hadrian", "Nerva", "Marcus Aurelius", "Trajan"],
         answer: "Trajan"
+    },
+    {
+        question: "What did the Romans build to transport large amounts of water over long distances?",
+        options: ["Wagons", "Pipes", "Barrels", "Aqueducts"],
+        answer: "Aqueducts"
+    },
+    {
+        question: "Which city in the Roman Empire was destroyed by a volcano in 79AD?",
+        options: ["Messina", "Alexandria", "Pompeii", "Capua"],
+        answer: "Pompeii"
     }
+
+
 
 
 ];

@@ -149,6 +149,7 @@ h2 {
 
     cursor: url(../images/sword.png), auto;
     border-radius: 5px;
+    transform: scale(1.05);
 
 }
 
