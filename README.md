@@ -219,6 +219,6 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - The cursor image used on hover effects was taken from [Cursors-4U](https://www.cursors-4u.com).
 
-  - The question mark icon was taken from [Font Awesome](https://fontawesome.com/).
+  - The question mark and volume icons were taken from [Font Awesome](https://fontawesome.com/).
 
   - The favicon image was taken from [Clipart](https://clipart-library.com/) and converted from a png to ico using a [Favicon Generator](https://favicon.io/favicon-converter/).
