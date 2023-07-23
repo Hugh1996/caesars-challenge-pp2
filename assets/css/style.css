@@ -249,11 +249,20 @@ h2 {
 
 }
 
-/* Instruction List */
+/* Instruction List & Audio */
+
+.audio-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 3rem;
+}
 
 .rules {
 
-    margin: 8rem 0 2rem 65rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
     font-size: 3.2rem;
 
 }

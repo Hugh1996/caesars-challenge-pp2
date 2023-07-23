@@ -245,6 +245,31 @@ function toggleRules() {
 
 }
 
+let audioEnabled = true;
+const audioBtn = document.getElementsByClassName("audio-btn")[0];
+const audioOn = '<i class="fa-solid fa-volume-high"></i>';
+const audioOff = '<i class="fa-solid fa-volume-xmark"></i>';
+
+function toggleAudio() {
+
+    console.log("Toggle audio function called.");
+
+
+    if (audioEnabled) {
+
+        audioEnabled = false;
+        audioBtn.innerHTML = audioOff;
+
+    } else {
+
+        audioEnabled = true;
+        audioBtn.innerHTML = audioOn;
+
+    }
+
+
+}
+
 
 
 
