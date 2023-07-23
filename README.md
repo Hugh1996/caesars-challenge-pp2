@@ -57,16 +57,16 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
   - The user can start the quiz by selecting the 'Start Quiz' button.
 
   - Additionally, there is a question mark icon displayed at the bottom of the container. Clicking on it will show a list of instructions explaining how the quiz works.
-  
+
 ![Main Page](/images2/mainpage.jpg)
 
 - ### Quiz Page
 
-  - Once the user selects 'Start Quiz', they are presented with a question and four options. The user must select one of the four options as their answer. When hovering over an option with the cursor, it increases the size of the button and the cursor changes to a sword.
+  - Once the user selects 'Start Quiz', they are presented with a question and four options. The user must select one of the four options as their answer.
 
   - During the quiz, the user will be informed about their progress by displaying the current question number at the top of the container.
 
-  - The quiz consists of six questions in total. These questions are chosen randomly from a pool of ten possible questions to prevent repetitiveness in case the user attempts the quiz again.
+  - The quiz consists of six questions in total. These questions are chosen randomly from a pool of ten possible questions to prevent repetitiveness should the user attempts the quiz again.
 
   - If the user selects the correct answer, its border will be highlighted in green as feedback for the user to confirm their answer was correct. Additionally, the user's score will be increased by 10 points for each correct answer, and the total score will be displayed at the bottom of the container.
 
@@ -74,9 +74,27 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 ![Quiz Page](/images2/questions.jpg)
 
+- ### Instructions
+
+  - If the user selects the question mark icon on the main page, an unordered list will be displayed that instructs the user on the functionality of the quiz.
+
+  - Additionally, below the isntructions is a 'Back' button the user can select to return to the main page.
+
 ![About Page](/images2/about.jpg)
 
+- ### Final Score
+
+  - Once the user has answered all questions, there final score will be displayed alongside their selected username.
+
+  - Depending on the users result, one of three different messages will appear.
+
+  - This page also consists of two buttons below the results. The first 'Play Again' button will allow the user to immediately start the quiz again and the 'Exit' button will return the user to the main page, where they may change their username or view the instructions again.
+
 ![End Page](/images2/end.jpg)
+
+- ### Features left to implement
+
+  -
 
 ## Testing
 
@@ -84,27 +102,35 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - HTML
 
-  -
+  - The [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhugh1996.github.io%2Fcaesars-challenge-pp2%2F) service was used to validate to ensure no errors occurred.
 
 - CSS
 
-  -
+  - The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhugh1996.github.io%2Fcaesars-challenge-pp2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) service was used to validate to ensure no errors occurred.
 
 - JavaScript
 
-  -
+  - The [JSHint JavaScript Validator](https://jshint.com/) service was used to validate to ensure no errors occurred.
+
+  - The following metrics were returned on JSHint.
+  - There are 11 functions in this file.
+  - Function with the largest signature take 1 arguments, while the median is 0.
+  - Largest function has 32 statements in it, while the median is 4.
+  - The most complex function has a cyclomatic complexity value of 4 while the median is 1.5.
 
 - ### Further Testing
 
-  - I tested this page works in different browsers: Google Chrome, Microsoft Edge.
+  - I tested this page works in different browsers: Google Chrome, Microsoft Edge and on different devices e.g. Laptops, phones both Android and Apple .
 
   - I confirmed the project is responsive on all standard screen sizes using Google Chrome dev tools and [Am I Responsive](https://ui.dev/amiresponsive).
 
-  - Friends and family confirmed the site color scheme and font style works well together.
+  - Friends and family confirmed the site color scheme and font style works well together. They alos confirmed the quiz as well structured and fun to utilize.
 
 ### Bugs
 
-Adding Favicon
+- When reviewing the quiz on an Apple phone, browser on that phone had automatically set the font color to blue, which has been rectified.
+ 
+Adding Favicon.
 
 ## Deployment
 
