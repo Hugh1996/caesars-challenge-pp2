@@ -178,7 +178,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - When reviewing the quiz on an Apple phone, browser on that phone had automatically set the font color to blue, which has been rectified.
 
-Adding Favicon.
+- Initally I was unable to input a favicon for my website. I discovered this was due to the file being named as .png as opposed to .ico. 
 
 ## Deployment
 
@@ -220,3 +220,5 @@ Adding Favicon.
   - The cursor image used on hover effects was taken from [Cursors-4U](https://www.cursors-4u.com).
 
   - The question mark icon was taken from [Font Awesome](https://fontawesome.com/).
+
+  - The favicon image was taken from [Clipart](https://clipart-library.com/) and converted from a png to ico using a [Favicon Generator](https://favicon.io/favicon-converter/).
