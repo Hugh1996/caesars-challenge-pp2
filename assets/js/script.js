@@ -25,6 +25,7 @@ function saveUsername() {
 
         username = inputValue;
         localStorage.setItem("username", username); // Stores username
+        alert("Your username has been saved!"); // Confirms to the user their username has been saved // 
 
     }
 }
@@ -204,7 +205,7 @@ function toggleRules() {
     rulesHeading.textContent = "About the Quiz";
     container.appendChild(rulesHeading);
 
-    let rulesList = document.createElement("ul");
+    let rulesList = document.createElement("ol");
 
     // List of instructions // 
     let instructions = [

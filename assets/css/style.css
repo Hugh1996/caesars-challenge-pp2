@@ -253,7 +253,7 @@ h2 {
 
 .rules {
 
-    margin-top: 8rem;
+    margin: 8rem 0 2rem 65rem;
     font-size: 3.2rem;
 
 }
@@ -274,7 +274,9 @@ h3 {
 }
 
 li {
-    margin: 0 0 1rem 2rem;
+
+    list-style-position: inside;
+    margin: 0 0 2rem 2rem;
     font-size: 1.8rem;
     font-weight: bold;
 }
