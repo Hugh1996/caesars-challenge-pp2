@@ -10,17 +10,23 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 ## User Stories
 
-- First Time Visitor Goals
+- First Time User Goals
 
-  - As a first time visitor, I want to be able to easily understand the main purpose of the website.
+  - As a first time user, I want a brief introduction available that explains how to navigate and take the quiz, so I can quickly understand how it works.
 
-  - As a first time visitor, I want to be able to easily navigate through the site.
+  - As a first time user, I want an intuitive inteface to be able to start the quiz without any confusion.
 
-  - As a first time visitor, I want to know what the site offers.
+  - As a first time user, I want the questions to cover a broad range of topics related to the Roman Empire, providing me with a comprehensive quiz experience.
 
-- Returning Visitor Goals
+- Returning User Goals
 
-  -
+  - As a returning user, I want the quiz to contain new and different questions each time I return, ensuring the experience remains fresh and challenging.
+
+  - As a returning user, I want to be able to start the quiz without having to view an introduction, as I am already familiar with how the quiz works.
+
+- Frequent User Goals
+
+  - As a frequent user, I want a wide pool of questions, to prevent encountering the same questions too often.
 
 ## Design
 
@@ -94,8 +100,6 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - ### Features left to implement
 
-  -
-
 ## Testing
 
 ### Validator Testing
@@ -118,6 +122,50 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
   - Largest function has 32 statements in it, while the median is 4.
   - The most complex function has a cyclomatic complexity value of 4 while the median is 1.5.
 
+### Testing User Stories from User Experience (UX)
+
+- ### User Stories
+
+- #### First Time Users
+
+- As a first time user, I want a brief introduction available that explains how to navigate and take the quiz, so I can quickly understand how it works.
+
+  - The title Caesars Challenge: The Roman Empire Quiz alerts the user the main purpose of the site.
+
+  - The user can select the question mark icon on the bottom that will lead them to a page, explaining how the quiz functions.
+
+- As a first time user, I want an intuitive inteface to be able to start the quiz without any confusion.
+
+  - The quiz container is centrally displayed on the screen, with no header or footer, or any other containers to distract from the center piece.
+
+  - The 'Start Quiz' button is enlarged and centred in the container so the user can easily see and know exactly what to select to begin the quiz, after inputting their username.
+
+- As a first time user, I want the questions to cover a broad range of topics related to the Roman Empire, providing me with a comprehensive quiz experience.
+
+  - The questions vary from the very founding of the city of Rome to the late Empire with some general Roman trivia, ensuring the user gets the full learning experience throughout its history.
+
+- #### Returning Users
+
+- As a returning user, I want my previous username stored.
+
+  - The username is stored in local storage and will automatically populate when the user returns.
+
+  - Once a user saves their username before starting the quiz
+
+- As a returning visitor, I want the quiz to contain new and different questions each time I return, ensuring the experience remains fresh and challenging.
+
+  - The user is asked a total of six questions which are generated at random from a pool of twelve questions. This ensure the returning user will not have the exact same experience each time it is played.
+
+- As a returning visitor, I want to be able to start the quiz without having to view an introduction, as I am already familiar with how the quiz works.
+
+  - While the user can view an introduction by selecting the question mark icon, it is not necessary to view before starting the quiz.
+
+- #### Frequent Users
+
+- As a frequent user, I want a wide pool of questions, to prevent encountering the same questions too often.
+
+  - The user is asked a total of six questions which are generated at random from a pool of twelve questions. This ensure the returning user will not have the exact same experience each time it is played.
+
 - ### Further Testing
 
   - I tested this page works in different browsers: Google Chrome, Microsoft Edge and on different devices e.g. Laptops, phones both Android and Apple .
@@ -129,7 +177,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 ### Bugs
 
 - When reviewing the quiz on an Apple phone, browser on that phone had automatically set the font color to blue, which has been rectified.
- 
+
 Adding Favicon.
 
 ## Deployment
@@ -163,7 +211,7 @@ Adding Favicon.
 
 - ### Content
 
-  - Quiz questions inspiration were taken from [Britannica](https://www.britannica.com/).
+  - Quiz questions inspiration were taken from [Britannica](https://www.britannica.com/) and [Beano](https://www.beano.com/).
 
 - ### Media
 
