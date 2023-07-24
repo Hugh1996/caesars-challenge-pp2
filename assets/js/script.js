@@ -165,7 +165,7 @@ function endScore() {
 
     } else {
 
-        congrats = "Try again soldier!"; // Displays when user gets low result //
+        congrats = "Try again soldier!"; // Displays when user gets lowest result //
 
     }
 
@@ -251,23 +251,23 @@ function toggleRules() {
 
 let audioEnabled = true;
 const audioBtn = document.getElementsByClassName("audio-btn")[0];
+const audioPlayer = document.getElementsByClassName("audio-player");
 const audioOn = '<i class="fa-solid fa-volume-high"></i>';
 const audioOff = '<i class="fa-solid fa-volume-xmark"></i>';
 
 function toggleAudio() {
 
-    console.log("Toggle audio function called.");
-
-
     if (audioEnabled) {
 
         audioEnabled = false;
         audioBtn.innerHTML = audioOff;
+        audioPlayer.pause();
 
     } else {
 
         audioEnabled = true;
         audioBtn.innerHTML = audioOn;
+        audioPlayer.play();
 
     }
 
