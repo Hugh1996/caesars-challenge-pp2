@@ -204,7 +204,7 @@ function endScore() {
 
 }
 
-// Add page of instruction // 
+// Add page of instructions // 
 function toggleRules() {
 
     let container = document.getElementById("container");
@@ -255,6 +255,7 @@ const audioPlayer = document.getElementsByClassName("audio-player")[0];
 const audioOff = '<i class="fa-solid fa-volume-xmark"></i>';
 const audioOn = '<i class="fa-solid fa-volume-high"></i>';
 
+// Allows the user the options to play or mute audio //
 function toggleAudio() {
 
     if (audioEnabled) {
@@ -273,7 +274,4 @@ function toggleAudio() {
 
 
 }
-
-
-
 
