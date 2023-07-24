@@ -107,7 +107,7 @@ function checkAnswer(event) {
     if (selectAnswer === correctAnswer) {
 
         selectOption.style.border = "5px solid green";
-        score += 20; // Increments score by 10
+        score += 20; // Increments score by 20
         feedbackResult = "Correct!";
 
     } else {
@@ -129,7 +129,7 @@ function checkAnswer(event) {
 
     } else {
 
-        endScore();
+        setTimeout(endScore, 1000); // Adds pause before moving to final score page //
 
     }
 }
@@ -220,9 +220,9 @@ function toggleRules() {
     let instructions = [
 
         "Enter your username and click Start Quiz to begin the quiz.",
-        "You will be asked six questions. Read the question carefully.",
-        "For each question, there will be four options to choose from.",
-        "Each correct question is worth ten points. If you answer incorrectly, you get 0. The correct answer will briefly be displayed below the options.",
+        "You will be asked five questions. Read each question carefully.",
+        "For each question, there will be four answers to choose from.",
+        "Each correct question is worth twenty points. If you answer incorrectly, you get 0. The correct answer will briefly be displayed below the options.",
         "Depending on your result, you will get a different score and message at the end of the quiz.",
         "If you want to try again, select 'Play Again'. Otherwise you can return to the main page by clicking 'Exit'."
 
