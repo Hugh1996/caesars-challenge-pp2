@@ -124,6 +124,10 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
   - Largest function has 32 statements in it, while the median is 4.
   - The most complex function has a cyclomatic complexity value of 4 while the median is 1.5.
 
+  I also confirmed the colors and font are easy to read and accessible using lighthouse in devtools.
+
+  ![Lighthouse](/images2/lighthouse.jpg)
+
 ### Testing User Stories from User Experience (UX)
 
 - ### User Stories
