@@ -251,9 +251,9 @@ function toggleRules() {
 
 let audioEnabled = true;
 const audioBtn = document.getElementsByClassName("audio-btn")[0];
-const audioPlayer = document.getElementsByClassName("audio-player");
-const audioOn = '<i class="fa-solid fa-volume-high"></i>';
+const audioPlayer = document.getElementsByClassName("audio-player")[0];
 const audioOff = '<i class="fa-solid fa-volume-xmark"></i>';
+const audioOn = '<i class="fa-solid fa-volume-high"></i>';
 
 function toggleAudio() {
 
