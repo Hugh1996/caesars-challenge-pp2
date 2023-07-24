@@ -62,9 +62,11 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - The user can start the quiz by selecting the 'Start Quiz' button.
 
-  - Additionally, there is a question mark icon displayed at the bottom of the container. Clicking on it will show a list of instructions explaining how the quiz works.
+  - Additionally, there is a question mark icon displayed at the bottom right of the container. Clicking on it will show a list of instructions explaining how the quiz works.
 
-![Main Page](/images2/mainpage.jpg)
+  - In the bottom left of the container, there is a volume icon that provides users with the option to play Roman-themed audio. The audio is not set to automatically play, ensuring that users have the choice to engage with it at their discretion, rather than being forced into it.
+
+![Main Page]()
 
 - ### Quiz Page
 
@@ -72,13 +74,13 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - During the quiz, the user will be informed about their progress by displaying the current question number at the top of the container.
 
-  - The quiz consists of six questions in total. These questions are chosen randomly from a pool of ten possible questions to prevent repetitiveness should the user attempts the quiz again.
+  - The quiz consists of five questions in total. These questions are chosen randomly from a pool of twelve possible questions to prevent repetitiveness should the user attempts the quiz again.
 
-  - If the user selects the correct answer, its border will be highlighted in green as feedback for the user to confirm their answer was correct. Additionally, the user's score will be increased by 10 points for each correct answer, and the total score will be displayed at the bottom of the container.
+  - If the user selects the correct answer, its border will be highlighted in green as feedback for the user to confirm their answer was correct. Additionally, the user's score will be increased by 20 points for each correct answer, and the total score will be displayed at the bottom of the container.
 
   - If the user selects an incorrect answer, the border of the chosen option will be highlighted in red, providing feedback to confirm that the answer selected is incorrect. Additionally, the correct answer will be briefly displayed just below the four possible options, allowing the user to see the right answer.
 
-![Quiz Page](/images2/questions.jpg)
+![Quiz Page]()
 
 - ### Instructions
 
@@ -86,7 +88,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - Additionally, below the isntructions is a 'Back' button the user can select to return to the main page.
 
-![About Page](/images2/about.jpg)
+![About Page]()
 
 - ### Final Score
 
@@ -96,7 +98,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - This page also consists of two buttons below the results. The first 'Play Again' button will allow the user to immediately start the quiz again and the 'Exit' button will return the user to the main page, where they may change their username or view the instructions again.
 
-![End Page](/images2/end.jpg)
+![End Page]()
 
 - ### Features left to implement
 
@@ -106,11 +108,11 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - HTML
 
-  - The [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhugh1996.github.io%2Fcaesars-challenge-pp2%2F) service was used to validate to ensure no errors occurred.
+  - The [W3C Markup Validator]() service was used to validate to ensure no errors occurred.
 
 - CSS
 
-  - The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhugh1996.github.io%2Fcaesars-challenge-pp2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) service was used to validate to ensure no errors occurred.
+  - The [W3C CSS Validator]() service was used to validate to ensure no errors occurred.
 
 - JavaScript
 
@@ -154,7 +156,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - As a returning visitor, I want the quiz to contain new and different questions each time I return, ensuring the experience remains fresh and challenging.
 
-  - The user is asked a total of six questions which are generated at random from a pool of twelve questions. This ensure the returning user will not have the exact same experience each time it is played.
+  - The user is asked a total of five questions which are generated at random from a pool of twelve questions. This ensure the returning user will not have the exact same experience each time it is played.
 
 - As a returning visitor, I want to be able to start the quiz without having to view an introduction, as I am already familiar with how the quiz works.
 
@@ -164,7 +166,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - As a frequent user, I want a wide pool of questions, to prevent encountering the same questions too often.
 
-  - The user is asked a total of six questions which are generated at random from a pool of twelve questions. This ensure the returning user will not have the exact same experience each time it is played.
+  - The user is asked a total of five questions which are generated at random from a pool of twelve questions. This ensure the returning user will not have the exact same experience each time it is played.
 
 - ### Further Testing
 
@@ -178,7 +180,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - When reviewing the quiz on an Apple phone, browser on that phone had automatically set the font color to blue, which has been rectified.
 
-- Initally I was unable to input a favicon for my website. I discovered this was due to the file being named as .png as opposed to .ico. 
+- Initally I was unable to input a favicon for my website. I discovered this was due to the file being named as .png as opposed to .ico.
 
 ## Deployment
 
@@ -222,3 +224,5 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
   - The question mark and volume icons were taken from [Font Awesome](https://fontawesome.com/).
 
   - The favicon image was taken from [Clipart](https://clipart-library.com/) and converted from a png to ico using a [Favicon Generator](https://favicon.io/favicon-converter/).
+
+  - The audio file was taken from [Youtube](https://www.youtube.com/), which cost the cheap price of €1. It was then converted from a video file into an audio file.
