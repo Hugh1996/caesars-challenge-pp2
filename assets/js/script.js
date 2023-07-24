@@ -1,5 +1,5 @@
 let questionIndex = 0;
-let totalQuestions = 6;
+let totalQuestions = 5;
 let score = 0;
 let currentQuestion = 0;
 let username = "";
@@ -107,7 +107,7 @@ function checkAnswer(event) {
     if (selectAnswer === correctAnswer) {
 
         selectOption.style.border = "5px solid green";
-        score += 10; // Increments score by 10
+        score += 20; // Increments score by 10
         feedbackResult = "Correct!";
 
     } else {
@@ -142,8 +142,9 @@ function endScore() {
 
     const congratsResult = {
 
-        HIGH: "60", // Stores 60 as the value of HIGH //
-        MID: "30" // Stores 30 as the value of MID //
+        HIGH: "100", // Stores 100 as the value of HIGH //
+        MID: "60", // Stores 60 as the value of MID //
+        LOW: "40" // Stores 40 as the value of LOW //
 
     };
 
@@ -152,18 +153,21 @@ function endScore() {
 
     if (finalScore >= congratsResult.HIGH) {
 
-        congrats = "Imperator, you have conquered all!"; // Displays when user gets HIGH result
+        congrats = "Imperator, you have conquered all!"; // Displays when user gets HIGH result //
 
     } else if (finalScore >= congratsResult.MID) {
 
-        congrats = "Legate, you are victorious!"; // Displays when user gets MID result
+        congrats = "Legate, you are victorious!"; // Displays when user gets MID result //
+
+    } else if (finalScore >= congratsResult.LOW) {
+
+        congrats = "Well done Tribune!"; // Displays when user gets low result //
 
     } else {
 
-        congrats = "Tribune, try again!"; // Displays when user gets low result
+        congrats = "Try again soldier!"; // Displays when user gets low result //
 
     }
-
 
     let myResult = document.createElement("h2");
     myResult.className = "my-result";
