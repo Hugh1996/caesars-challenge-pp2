@@ -108,7 +108,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - HTML
 
-  - The [W3C Markup Validator]() service was used to validate to ensure no errors occurred.
+  - The [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhugh1996.github.io%2Fcaesars-challenge-pp2%2F) service was used to validate to ensure no errors occurred.
 
 - CSS
 
@@ -185,6 +185,8 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 - When reviewing the quiz on an Apple phone, browser on that phone had automatically set the font color to blue, which has been rectified.
 
 - Initally I was unable to input a favicon for my website. I discovered this was due to the file being named as .png as opposed to .ico.
+
+- The audio initially worked on my preview but not the live site. I discovered this was due to the spacing in the file name which I rectified.
 
 ## Deployment
 
