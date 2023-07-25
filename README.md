@@ -102,6 +102,10 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - ### Features left to implement
 
+  - The addition of a ten second timer that counts down. If the user answers correctly in this timeframe, bonus points are awarded.
+
+  - The addition of a High Score page, where the user can return to and view their previous scores, comparing their results. 
+
 ## Testing
 
 ### Validator Testing
@@ -112,7 +116,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - CSS
 
-  - The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhugh1996.github.io%2Fcaesars-challenge-pp2%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) service was used to validate to ensure no errors occurred.
+  - The [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhugh1996.github.io%2Fcaesars-challenge-pp2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) service was used to validate to ensure no errors occurred.
 
 - JavaScript
 
@@ -121,8 +125,8 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
   - The following metrics were returned on JSHint.
   - There are 11 functions in this file.
   - Function with the largest signature take 1 arguments, while the median is 0.
-  - Largest function has 32 statements in it, while the median is 4.
-  - The most complex function has a cyclomatic complexity value of 4 while the median is 1.5.
+  - Largest function has 32 statements in it, while the median is 5.
+  - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
 
   I also confirmed the colors and font are easy to read and accessible using lighthouse in devtools.
 
@@ -179,6 +183,14 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
   - I confirmed the project is responsive on all standard screen sizes using Google Chrome dev tools and [Am I Responsive](https://ui.dev/amiresponsive).
 
   - Friends and family confirmed the site color scheme and font style works well together. They alos confirmed the quiz as well structured and fun to utilize.
+
+  - I confirmed username saves. 
+
+  - I confirmed all buttons work.
+
+  - I confirmed question count and scores increment correctly.
+
+  - I confirmed results run correctly. 
 
 ### Bugs
 
