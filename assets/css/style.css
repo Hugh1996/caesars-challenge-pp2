@@ -247,10 +247,9 @@ h2 {
 
 .audio-btn {
     position: absolute;
-    bottom: 85px;
-    left: 320px;
+    bottom: 10px;
+    left: 10px;
     font-size: 3rem;
-    z-index: 1;
 }
 
 .rules {
