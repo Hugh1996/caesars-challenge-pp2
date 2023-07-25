@@ -4,7 +4,7 @@ Caesars Challenge is an engaging quiz centered around the history of the Roman E
 
 This quiz caters to users with varying levels of knowledge about ancient Rome, making it suitable for both enthusiasts and those simply seeking to learn more about its history.
 
-![Responsiveness](/documentation//respon.jpg)
+![Responsiveness](/documentation/rep.jpg)
 
 # User Experience (UX)
 
@@ -88,7 +88,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - Additionally, below the isntructions is a 'Back' button the user can select to return to the main page.
 
-![About Page]()
+![About Page](/documentation/rules.jpg)
 
 - ### Final Score
 
@@ -130,7 +130,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   I also confirmed the colors and font are easy to read and accessible using lighthouse in devtools.
 
-  ![Lighthouse](/documentation/lighthouse.jpg)
+  ![Lighthouse](/documentation/light.jpg)
 
 ### Testing User Stories from User Experience (UX)
 
@@ -184,13 +184,13 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - Friends and family confirmed the site color scheme and font style works well together. They alos confirmed the quiz as well structured and fun to utilize.
 
-  - I confirmed username saves. 
+  - I confirmed the username saves in local storage. 
 
   - I confirmed all buttons work.
 
-  - I confirmed question count and scores increment correctly.
+  - I confirmed the question count and scores increment correctly.
 
-  - I confirmed results run correctly. 
+  - I confirmed the final score and message shows correctly. 
 
 ### Bugs
 
