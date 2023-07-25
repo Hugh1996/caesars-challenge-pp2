@@ -15,7 +15,9 @@ function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
 
-// Saves username and disables input field after //
+/**
+ * Saves username and disables input field after
+ */
 function saveUsername() {
 
     let inputUsername = document.getElementById("username");
@@ -30,7 +32,9 @@ function saveUsername() {
     }
 }
 
-// Empties container div and populates quiz content //
+/**
+ * Empties container div and populates quiz content
+ */
 function startQuiz() {
 
     // Displays alert to tell user to submit their username //
@@ -96,7 +100,9 @@ function startQuiz() {
 
 }
 
-// Compares selected option with correct answer and if correct, increments score //
+/**  
+ * Compares selected option with correct answer and if correct, increments score 
+*/
 function checkAnswer(event) {
 
     let selectOption = event.target;
@@ -134,7 +140,9 @@ function checkAnswer(event) {
     }
 }
 
-// Function for final score //
+/** 
+ * Function for final score
+ **/
 function endScore() {
 
     let container = document.getElementById("container");
@@ -204,7 +212,9 @@ function endScore() {
 
 }
 
-// Add page of instructions // 
+/**
+ * Add page of instructions
+ */
 function toggleRules() {
 
     let container = document.getElementById("container");
@@ -222,7 +232,7 @@ function toggleRules() {
         "Enter your username and click Start Quiz to begin the quiz.",
         "You will be asked five questions. Read each question carefully.",
         "For each question, there will be four answers to choose from.",
-        "Each correct question is worth twenty points. If you answer incorrectly, you get 0. The correct answer will briefly be displayed below the options.",
+        "Each correct question is worth twenty points. If you answer incorrectly, you get zero. The correct answer will briefly be displayed below the options.",
         "Depending on your result, you will get a different score and message at the end of the quiz.",
         "If you want to try again, select 'Play Again'. Otherwise you can return to the main page by clicking 'Exit'."
 
@@ -255,7 +265,9 @@ const audioPlayer = document.getElementsByClassName("audio-player")[0];
 const audioOff = '<i class="fa-solid fa-volume-xmark"></i>';
 const audioOn = '<i class="fa-solid fa-volume-high"></i>';
 
-// Allows the user the options to play or mute audio //
+/**
+ * Allows the user the options to play or mute audio
+ */
 function toggleAudio() {
 
     if (audioEnabled) {

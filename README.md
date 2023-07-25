@@ -4,7 +4,7 @@ Caesars Challenge is an engaging quiz centered around the history of the Roman E
 
 This quiz caters to users with varying levels of knowledge about ancient Rome, making it suitable for both enthusiasts and those simply seeking to learn more about its history.
 
-![Responsiveness](/images2/respon.jpg)
+![Responsiveness](/documentation//respon.jpg)
 
 # User Experience (UX)
 
@@ -66,7 +66,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - In the bottom left of the container, there is a volume icon that provides users with the option to play Roman-themed audio. The audio is not set to automatically play, ensuring that users have the choice to engage with it at their discretion, rather than being forced into it.
 
-![Main Page](/images2/mains.jpg)
+![Main Page](/documentation//mains.jpg)
 
 - ### Quiz Page
 
@@ -80,7 +80,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - If the user selects an incorrect answer, the border of the chosen option will be highlighted in red, providing feedback to confirm that the answer selected is incorrect. Additionally, the correct answer will be briefly displayed just below the four possible options, allowing the user to see the right answer.
 
-![Quiz Page](/images2/quests.jpg)
+![Quiz Page](/documentation//quests.jpg)
 
 - ### Instructions
 
@@ -98,7 +98,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - This page also consists of two buttons below the results. The first 'Play Again' button will allow the user to immediately start the quiz again and the 'Exit' button will return the user to the main page, where they may change their username or view the instructions again.
 
-![End Page](/images2/endscores.jpg)
+![End Page](/documentation/endscores.jpg)
 
 - ### Features left to implement
 
@@ -126,7 +126,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   I also confirmed the colors and font are easy to read and accessible using lighthouse in devtools.
 
-  ![Lighthouse](/images2/lighthouse.jpg)
+  ![Lighthouse](/documentation/lighthouse.jpg)
 
 ### Testing User Stories from User Experience (UX)
 
