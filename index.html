@@ -19,28 +19,26 @@
 </head>
 
 <body>
+    <div class="audio-btn" onclick="toggleAudio()">
+        <i class="fa-solid fa-volume-xmark"></i>
+        <audio class="audio-player" src="Journey-to-Rome-Part-I-Rome-Total-War-Original-Soundtrack.m4a" loop>This
+            audio is not supported in your browser</audio>
+    </div>
+
     <div id="container">
 
         <h1 class="heading">Caesars Challenge: The Roman Empire Quiz</h1>
         <input type="text" id="username" placeholder="Enter username">
         <button id="start" class="main-btn" onclick="startQuiz()">Start Quiz</button>
 
-        <div class="audio-btn" onclick="toggleAudio()">
-            <i class="fa-solid fa-volume-xmark"></i>
-            <audio class="audio-player" src="Journey-to-Rome-Part-I-Rome-Total-War-Original-Soundtrack.m4a" loop>This
-                audio is not supported in your browser</audio>
-        </div>
-
         <div class="rules" onclick="toggleRules()">
             <i class="fa-regular fa-circle-question"></i>
         </div>
     </div>
 
-
     <script src="https://kit.fontawesome.com/bb021deaf1.js" crossorigin="anonymous"></script>
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
-
 </body>
 
 </html>

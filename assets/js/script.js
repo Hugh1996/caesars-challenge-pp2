@@ -90,12 +90,8 @@ function startQuiz() {
     myScore.className = "score";
     myScore.textContent = "Score: " + score;
     container.appendChild(myScore);
+
     container.appendChild(quizArea);
-
-    container = document.getElementById("container");
-    let rulesButton = document.getElementById("rules-button");
-    container.appendChild(rulesButton);
-
 
 }
 

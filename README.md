@@ -66,7 +66,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - In the bottom left of the container, there is a volume icon that provides users with the option to play Roman-themed audio. The audio is not set to automatically play, ensuring that users have the choice to engage with it at their discretion, rather than being forced into it.
 
-![Main Page]()
+![Main Page](/documentation/mainpage.jpg)
 
 - ### Quiz Page
 
