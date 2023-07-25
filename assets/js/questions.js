@@ -1,6 +1,6 @@
 
-/**
- * List of questions 
+/** 
+ * List of questions
  */
 
 let questions = [

@@ -47,7 +47,7 @@ body {
 
     font-size: 3.5rem;
     color: black;
-    margin: 4rem 0 6rem 0;
+    margin: 4rem 0 5rem 0;
 
 }
 
@@ -56,7 +56,7 @@ body {
 #username {
 
     background-color: rgba(211, 211, 211, 0.459);
-    margin-bottom: 0;
+    margin-bottom: 3rem;
     width: 16rem;
     height: 3.5rem;
     border: 1px solid black;
@@ -74,18 +74,11 @@ body {
 
 }
 
-#save {
-
-    background-color: rgba(211, 211, 211, 0.459);
-    margin-bottom: 6rem;
-
-}
-
 #start {
 
     height: 5rem;
     width: 22rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 
 }
 

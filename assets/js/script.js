@@ -1,5 +1,5 @@
+const totalQuestions = 5;
 let questionIndex = 0;
-let totalQuestions = 5;
 let score = 0;
 let currentQuestion = 0;
 let username = "";
@@ -18,8 +18,8 @@ function shuffleArray(array) {
 /**
  * Saves username and disables input field after
  */
-function saveUsername() {
 
+document.getElementById("username").addEventListener("input", function () {
     let inputUsername = document.getElementById("username");
     let inputValue = inputUsername.value.trim();
 
@@ -27,10 +27,9 @@ function saveUsername() {
 
         username = inputValue;
         localStorage.setItem("username", username); // Stores username
-        alert("Your username has been saved!"); // Confirms to the user their username has been saved // 
 
     }
-}
+});
 
 /**
  * Empties container div and populates quiz content
