@@ -50,9 +50,9 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - ### Main Image
 
-  - The main background image will be one of the first things the user sees. It portrarys a roman centurion in the midst of chaos and battle.
+  - The main background image will be one of the first things the user sees. It portrays a roman centurion in the midst of chaos and battle.
 
-  - The image's coloring follows the main color theme throughout the site, maintaing a visually appealing experience for the user.
+  - The image's coloring follows the main color theme throughout the site, maintaining a visually appealing experience for the user.
 
 - ### Main Page
 
@@ -84,7 +84,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - ### Instructions
 
-  - If the user selects the question mark icon on the main page, an unordered list will be displayed that instructs the user on the functionality of the quiz.
+  - If the user selects the question mark icon on the main page, a list will be displayed that instructs the user on the functionality of the quiz.
 
   - Additionally, below the isntructions is a 'Back' button the user can select to return to the main page.
 
@@ -92,9 +92,9 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - ### Final Score
 
-  - Once the user has answered all questions, there final score will be displayed alongside their selected username.
+  - Once the user has answered all questions, their final score will be displayed alongside their selected username.
 
-  - Depending on the users result, one of three different messages will appear.
+  - Depending on the users result, one of four different messages will appear.
 
   - This page also consists of two buttons below the results. The first 'Play Again' button will allow the user to immediately start the quiz again and the 'Exit' button will return the user to the main page, where they may change their username or view the instructions again.
 
@@ -158,9 +158,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 - As a returning user, I want my previous username stored.
 
-  - The username is stored in local storage and will automatically populate when the user returns.
-
-  - Once a user saves their username before starting the quiz
+  - Once a user saves their username before starting the quiz, the username is stored in local storage and will automatically populate when the user returns.
 
 - As a returning visitor, I want the quiz to contain new and different questions each time I return, ensuring the experience remains fresh and challenging.
 
@@ -182,7 +180,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
   - I confirmed the project is responsive on all standard screen sizes using Google Chrome dev tools and [Am I Responsive](https://ui.dev/amiresponsive).
 
-  - Friends and family confirmed the site color scheme and font style works well together. They alos confirmed the quiz as well structured and fun to utilize.
+  - Friends and family confirmed the site color scheme and font style works well together. They also confirmed the quiz was well structured and fun to play.
 
   - I confirmed the username saves in local storage. 
 
@@ -194,7 +192,7 @@ This quiz caters to users with varying levels of knowledge about ancient Rome, m
 
 ### Bugs
 
-- When reviewing the quiz on an Apple phone, browser on that phone had automatically set the font color to blue, which has been rectified.
+- When reviewing the quiz on an Apple phone, the browser on that phone had automatically set the font color to blue, which has been rectified.
 
 - Initally I was unable to input a favicon for my website. I discovered this was due to the file being named as .png as opposed to .ico.
 
